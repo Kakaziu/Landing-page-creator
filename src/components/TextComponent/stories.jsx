@@ -12,8 +12,24 @@ export default {
   },
 };
 
-export const Template = (args) => (
+export const Light = (args) => (
   <div>
     <TextComponent {...args} />
   </div>
 );
+
+export const Dark = (args) => (
+  <div>
+    <TextComponent {...args} />
+  </div>
+);
+
+Dark.parameters = {
+  backgrounds: {
+    default: 'dark',
+  },
+};
+
+Dark.args = {
+  isdark: false,
+};
