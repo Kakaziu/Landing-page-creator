@@ -7,7 +7,7 @@ const buttonSizes = {
   `,
 
   big: (theme) => css`
-    padding: 8px 30px;
+    padding: 8px 40px;
     font-size: ${theme.fonts.sizes.medium};
   `,
 };
