@@ -21,7 +21,7 @@ describe('<Button />', () => {
     const button = screen.getByText('oi');
 
     expect(button).toHaveStyle({
-      padding: '8px 30px',
+      padding: '8px 40px',
       'font-size': theme.fonts.sizes.medium,
     });
   });
