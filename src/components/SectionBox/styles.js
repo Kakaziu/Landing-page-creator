@@ -16,6 +16,7 @@ export const Container = styled.div`
 
     > ${Text} {
       margin-top: ${theme.spacings.small};
+      text-align: center;
     }
 
     > ${Button} {
