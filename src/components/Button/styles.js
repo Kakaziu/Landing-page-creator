@@ -22,5 +22,11 @@ export const Button = styled.button`
     color: ${theme.colors.white};
     border-radius: 4px;
     ${buttonSizes[size](theme)}
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
   `}
+
+  &:hover {
+    background-color: #b81132;
+  }
 `;
