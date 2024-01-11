@@ -9,9 +9,11 @@ export const Container = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 80%;
+    margin: 0 auto;
 
     > ${Title} {
-      margin-bottom: ${theme.spacings.medium};
+      margin-bottom: ${theme.spacings.small};
     }
 
     > ${Text} {

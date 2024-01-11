@@ -1,8 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<SectionBox/> should render section box 1`] = `
+exports[`render <Home /> should render home 1`] = `
 .c4 {
-  color: #0A1128;
+  color: #FFFFFF;
   text-transform: none;
   font-size: 3.2rem;
 }
@@ -17,8 +17,8 @@ exports[`<SectionBox/> should render section box 1`] = `
   background-color: #dc143c;
   color: #FFFFFF;
   border-radius: 4px;
-  padding: 8px 20px;
-  font-size: 1.6rem;
+  padding: 8px 40px;
+  font-size: 2.4rem;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
@@ -57,8 +57,8 @@ exports[`<SectionBox/> should render section box 1`] = `
 }
 
 .c0 {
-  background-color: #FFFFFF;
-  color: #0A1128;
+  background-color: #0A1128;
+  color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -77,22 +77,12 @@ exports[`<SectionBox/> should render section box 1`] = `
         <h1
           class="c3 c4"
         >
-          Section Box
+          Criador de landing pages
         </h1>
         <p
           class="c5 c6"
         >
-          There are 1
-        </p>
-        <p
-          class="c5 c6"
-        >
-          There are 2
-        </p>
-        <p
-          class="c5 c6"
-        >
-          There are 3
+          Transforme sua visão em realidade! Crie uma landing page impressionante e conquiste a atenção do seu público. Experimente agora e dê vida à sua mensagem de forma envolvente. Comece a construir sua presença online hoje mesmo!
         </p>
         <a
           class=""
@@ -101,7 +91,7 @@ exports[`<SectionBox/> should render section box 1`] = `
           <button
             class="c7"
           >
-            Clique aqui
+            Comece a criar
           </button>
         </a>
       </div>
