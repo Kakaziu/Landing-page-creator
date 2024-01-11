@@ -5,7 +5,7 @@ import Heading from '../Heading/index';
 import TextComponent from '../TextComponent/index';
 import Button from '../Button/index';
 
-const SectionBox = ({ background, title, paragraphs, button = null }) => {
+const SectionBox = ({ background, title, paragraphs = [], button = null }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
