@@ -10,7 +10,7 @@ const MenuLink = ({ children, link, open_in_new_tab = true }) => {
 };
 
 MenuLink.propTypes = {
-  children: P.string.isRequired,
+  children: P.node.isRequired,
   link: P.string.isRequired,
   open_in_new_tab: P.bool,
 };
