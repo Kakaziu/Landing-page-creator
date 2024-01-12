@@ -6,7 +6,7 @@ const LogoLink = ({ text, srcImg, link }) => {
   return (
     <Heading>
       <Styled.Container href={link}>
-        {srcImg ? <img src={srcImg} alt="text" /> : text}
+        {srcImg ? <img src={srcImg} alt={text} /> : <span>{text}</span>}
       </Styled.Container>
     </Heading>
   );
