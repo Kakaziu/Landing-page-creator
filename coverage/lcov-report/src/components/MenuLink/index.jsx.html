@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-    <title>Code coverage report for src/components/SectionBackground/index.jsx</title>
+    <title>Code coverage report for src/components/MenuLink/index.jsx</title>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../../../prettify.css" />
     <link rel="stylesheet" href="../../../base.css" />
@@ -19,7 +19,7 @@
 <body>
 <div class='wrapper'>
     <div class='pad1'>
-        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/components/SectionBackground</a> index.jsx</h1>
+        <h1><a href="../../../index.html">All files</a> / <a href="index.html">src/components/MenuLink</a> index.jsx</h1>
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
@@ -32,7 +32,7 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
@@ -84,39 +84,39 @@
 <a name='L19'></a><a href='#L19'>19</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import P from 'prop-types';
-import SectionContainer from '../SectionContainer';
 import * as Styled from './styles';
 &nbsp;
-const SectionBackground = ({ children, background = false }) =&gt; {
+const MenuLink = ({ children, link, open_in_new_tab = true }) =&gt; {
   return (
-    &lt;Styled.Container background={background}&gt;
-      &lt;SectionContainer&gt;{children}&lt;/SectionContainer&gt;
-    &lt;/Styled.Container&gt;
+    &lt;Styled.Link href={link} target={open_in_new_tab ? '_self' : '_blank'}&gt;
+      {children}
+    &lt;/Styled.Link&gt;
   );
 };
 &nbsp;
-SectionBackground.propTypes = {
-  children: P.node.isRequired,
-  background: P.bool,
+MenuLink.propTypes = {
+  children: P.string.isRequired,
+  link: P.string.isRequired,
+  open_in_new_tab: P.bool,
 };
 &nbsp;
-export default SectionBackground;
+export default MenuLink;
 &nbsp;</pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
