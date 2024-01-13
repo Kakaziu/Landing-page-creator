@@ -12,11 +12,22 @@ const Menu = ({ links = [], logoData }) => {
 
   return (
     <>
-      <Styled.Button onClick={() => setMenuVisible(!menuVisible)}>
+      <Styled.Button
+        onClick={() => setMenuVisible(!menuVisible)}
+        aria-label="Open/Close Menu"
+      >
         {menuVisible ? (
-          <MdClose size="35" color={theme.colors.primaryColor} />
+          <MdClose
+            size="35"
+            color={theme.colors.primaryColor}
+            aria-label="Close Menu"
+          />
         ) : (
-          <MdMenu size="35" color={theme.colors.primaryColor} />
+          <MdMenu
+            size="35"
+            color={theme.colors.primaryColor}
+            aria-label="Open Menu"
+          />
         )}
       </Styled.Button>
       <Styled.Container menuVisible={menuVisible}>
