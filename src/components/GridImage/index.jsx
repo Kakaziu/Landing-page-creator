@@ -4,7 +4,7 @@ import * as Styled from './styles';
 import Heading from '../Heading';
 import TextComponent from '../TextComponent';
 
-const GridText = ({ title, description, grid = [], background = false }) => {
+const GridImage = ({ title, description, grid = [], background = false }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container background={background}>
@@ -14,9 +14,8 @@ const GridText = ({ title, description, grid = [], background = false }) => {
         </Styled.TitleContainer>
         <Styled.GridContainer>
           {grid.map((element) => (
-            <Styled.GridElement key={title}>
-              <Heading size="small">{grid.title}</Heading>
-              <TextComponent>{grid.description}</TextComponent>
+            <Styled.GridElement key={element.altText}>
+              <img src={element.srcImg} alt={element.altText} />
             </Styled.GridElement>
           ))}
         </Styled.GridContainer>
@@ -25,16 +24,16 @@ const GridText = ({ title, description, grid = [], background = false }) => {
   );
 };
 
-GridText.propTypes = {
+GridImage.propTypes = {
   title: P.string.isRequired,
   description: P.string.isRequired,
   grid: P.arrayOf(
     P.shape({
-      title: P.string.isRequired,
-      description: P.string.isRequired,
+      srcImg: P.string.isRequired,
+      altText: P.string.isRequired,
     }),
   ),
   background: P.bool,
 };
 
-export default GridText;
+export default GridImage;
