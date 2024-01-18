@@ -14,9 +14,9 @@ const GridText = ({ title, description, grid = [], background = false }) => {
         </Styled.TitleContainer>
         <Styled.GridContainer>
           {grid.map((element) => (
-            <Styled.GridElement key={title}>
-              <Heading size="small">{grid.title}</Heading>
-              <TextComponent>{grid.description}</TextComponent>
+            <Styled.GridElement key={element.title}>
+              <Heading size="small">{element.title}</Heading>
+              <TextComponent>{element.description}</TextComponent>
             </Styled.GridElement>
           ))}
         </Styled.GridContainer>
