@@ -19,21 +19,21 @@ const Menu = ({ links = [], logoData }) => {
         {menuVisible ? (
           <MdClose
             size="35"
-            color={theme.colors.primaryColor}
+            color={theme.colors.secondaryColor}
             aria-label="Close Menu"
           />
         ) : (
           <MdMenu
             size="35"
-            color={theme.colors.primaryColor}
+            color={theme.colors.secondaryColor}
             aria-label="Open Menu"
           />
         )}
       </Styled.Button>
       <Styled.Container menuVisible={menuVisible}>
         <SectionContainer>
+          <LogoLink {...logoData} />
           <Styled.MenuContainer>
-            <LogoLink {...logoData} />
             <NavLink links={links} />
           </Styled.MenuContainer>
         </SectionContainer>

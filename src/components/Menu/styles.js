@@ -11,21 +11,26 @@ export const Container = styled.div`
   ${({ theme, menuVisible }) => css`
   position: fixed;
   z-index: 5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   padding: 10px 0px;
   width: 100%;
   background: ${theme.colors.white};
   transition: 0.3s;
+  overflow-y: auto;
 
   ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
     }
 
+    ${LogoLink} {
+        margin-bottom: 3rem;
+        justify-content: center;
+      }
+
     @media ${theme.media.lteMedium} {
+      top: 0;
+      left: 0;
+      right: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -39,7 +44,7 @@ export const Container = styled.div`
 
 export const Button = styled.button`
   ${({ theme }) => css`
-    position: absolute;
+    position: fixed;
     z-index: 6;
     top: 2rem;
     right: 2rem;
@@ -57,7 +62,6 @@ export const Button = styled.button`
 export const MenuContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
   ${SectionContainer} {
@@ -67,12 +71,19 @@ export const MenuContainer = styled.div`
 
     @media ${theme.media.lteMedium} {
       flex-direction: column;
+      justify-content: center;
       height: 42rem;
       overflow-y: auto;
       padding: ${theme.spacings.large};
+      width: 100%;
 
-      ${LogoLink} {
-        margin-bottom: 3rem;
+      &::-webkit-scrollbar {
+        width: 5px
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: ${theme.colors.primaryColor};
+        border-radius: 50px;
       }
     }
   `}

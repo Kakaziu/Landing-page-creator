@@ -1,22 +1,8 @@
-import SectionBox from '../../components/SectionBox';
+import Base from '../Base';
+import mockBase from '../Base/mock';
 
 const Home = () => {
-  return (
-    <SectionBox
-      background
-      title="Criador de landing pages"
-      paragraphs={[
-        {
-          text: 'Transforme sua visão em realidade! Crie uma landing page impressionante e conquiste a atenção do seu público. Experimente agora e dê vida à sua mensagem de forma envolvente. Comece a construir sua presença online hoje mesmo!',
-        },
-      ]}
-      button={{
-        text: 'Comece a criar',
-        url: '#',
-        size: 'big',
-      }}
-    />
-  );
+  return <Base {...mockBase} />;
 };
 
 export default Home;
