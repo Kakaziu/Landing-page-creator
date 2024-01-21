@@ -10,12 +10,20 @@ import { theme } from '../../styles/theme';
 const Menu = ({ links = [], logoData }) => {
   const [menuVisible, setMenuVisible] = useState(false);
 
+  function onSetMenuVisible() {
+    if (menuVisible)
+      window.scroll({
+        top: 0,
+        left: 0,
+        behavior: 'instant',
+      });
+
+    setMenuVisible(!menuVisible);
+  }
+
   return (
     <>
-      <Styled.Button
-        onClick={() => setMenuVisible(!menuVisible)}
-        aria-label="Open/Close Menu"
-      >
+      <Styled.Button onClick={onSetMenuVisible} aria-label="Open/Close Menu">
         {menuVisible ? (
           <MdClose
             size="35"

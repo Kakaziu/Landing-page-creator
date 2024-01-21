@@ -16,6 +16,7 @@ export const Container = styled.div`
   background: ${theme.colors.white};
   transition: 0.3s;
   overflow-y: auto;
+  border-bottom: 1px solid ${theme.colors.mediumGray};
 
   ${SectionContainer} {
       padding-top: 0;
@@ -23,6 +24,10 @@ export const Container = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
