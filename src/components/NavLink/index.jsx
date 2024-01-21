@@ -6,7 +6,7 @@ const NavLink = ({ links = [] }) => {
   return (
     <Styled.Container>
       {links.map((link) => (
-        <MenuLink {...link} key={link.text} />
+        <MenuLink {...link} key={link.children} />
       ))}
     </Styled.Container>
   );

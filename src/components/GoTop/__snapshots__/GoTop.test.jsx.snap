@@ -1,0 +1,48 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<GoTop/> should render a go to top button 1`] = `
+.c0 {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(10, 18, 40, 0.5);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.c0:hover {
+  background-color: #0A1128;
+}
+
+<div>
+  <a
+    aria-label="Go to top"
+    class="c0"
+    href="#"
+    title="Go to top"
+  >
+    <svg
+      color="white"
+      fill="currentColor"
+      height="35"
+      stroke="currentColor"
+      stroke-width="0"
+      style="color: white;"
+      viewBox="0 0 512 512"
+      width="35"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M128 320l128-128 128 128z"
+      />
+    </svg>
+  </a>
+</div>
+`;
