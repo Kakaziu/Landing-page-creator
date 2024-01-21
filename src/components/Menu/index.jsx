@@ -9,14 +9,18 @@ import { theme } from '../../styles/theme';
 
 const Menu = ({ links = [], logoData }) => {
   const [menuVisible, setMenuVisible] = useState(false);
+  const [scrollY, setScrollY] = useState(0);
 
   function onSetMenuVisible() {
-    if (menuVisible)
+    if (menuVisible) {
       window.scroll({
-        top: 0,
+        top: scrollY,
         left: 0,
         behavior: 'instant',
       });
+    } else {
+      setScrollY(window.scrollY);
+    }
 
     setMenuVisible(!menuVisible);
   }
