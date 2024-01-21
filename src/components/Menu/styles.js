@@ -22,15 +22,7 @@ export const Container = styled.div`
       padding-bottom: 0;
     }
 
-    ${LogoLink} {
-        margin-bottom: 3rem;
-        justify-content: center;
-      }
-
     @media ${theme.media.lteMedium} {
-      top: 0;
-      left: 0;
-      right: 0;
       height: 100vh;
       display: flex;
       justify-content: center;
@@ -38,6 +30,11 @@ export const Container = styled.div`
       visibility: hidden;
       opacity: 0;
       ${menuVisible && menuOnVisible()}
+
+      ${LogoLink} {
+        margin-bottom: 3rem;
+        justify-content: center;
+      }
     }
   `}
 `;
@@ -63,6 +60,7 @@ export const MenuContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
   ${SectionContainer} {
       padding-top: 0;
@@ -70,8 +68,7 @@ export const MenuContainer = styled.div`
     }
 
     @media ${theme.media.lteMedium} {
-      flex-direction: column;
-      justify-content: center;
+      display: block;
       height: 42rem;
       overflow-y: auto;
       padding: ${theme.spacings.large};

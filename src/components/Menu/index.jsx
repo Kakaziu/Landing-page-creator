@@ -32,8 +32,8 @@ const Menu = ({ links = [], logoData }) => {
       </Styled.Button>
       <Styled.Container menuVisible={menuVisible}>
         <SectionContainer>
-          <LogoLink {...logoData} />
           <Styled.MenuContainer>
+            <LogoLink {...logoData} />
             <NavLink links={links} />
           </Styled.MenuContainer>
         </SectionContainer>

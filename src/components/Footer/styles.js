@@ -7,7 +7,8 @@ export const Container = styled.footer`
     justify-content: center;
     align-items: center;
     border-top: 1px solid ${theme.colors.mediumGray};
-
+    font-size: ${theme.fonts.sizes.small};
+    padding: ${theme.spacings.small};
 
     a {
       color: ${theme.colors.primaryColor};
