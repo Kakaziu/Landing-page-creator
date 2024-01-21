@@ -32,7 +32,9 @@ export const Container = styled.div`
 
     ${Title} {
       margin-bottom: ${theme.spacings.medium};
-      color: ${background ? theme.colors.white : theme.colors.primaryColor}
+      color: ${
+        background === 1 ? theme.colors.white : theme.colors.primaryColor
+      }
     }
   `}
 `;

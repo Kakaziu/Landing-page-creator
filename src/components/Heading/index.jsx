@@ -9,7 +9,7 @@ const Heading = ({
   size = 'medium',
 }) => {
   return (
-    <Styled.Title isdark={isdark} as={as} uppercase={uppercase} size={size}>
+    <Styled.Title isdark={+isdark} as={as} uppercase={+uppercase} size={size}>
       {children}
     </Styled.Title>
   );

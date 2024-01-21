@@ -35,7 +35,9 @@ export const Container = styled.div`
   ${({ theme, background }) => css`
     ${HeadingContainer} {
       margin-bottom: ${theme.spacings.small};
-      color: ${background ? theme.colors.white : theme.colors.primaryColor}
+      color: ${
+        background === 1 ? theme.colors.white : theme.colors.primaryColor
+      }
     }
   `}
 `;

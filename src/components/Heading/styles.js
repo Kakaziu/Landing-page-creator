@@ -27,8 +27,8 @@ const mediaFont = (theme) => css`
 
 export const Title = styled.h1`
   ${({ theme, isdark, uppercase, size }) => css`
-    color: ${isdark ? theme.colors.primaryColor : theme.colors.white};
-    text-transform: ${uppercase ? 'uppercase' : 'none'};
+    color: ${isdark === 1 ? theme.colors.primaryColor : theme.colors.white};
+    text-transform: ${uppercase === 1 ? 'uppercase' : 'none'};
     ${titleSizes[size](theme)}
   `}
 `;

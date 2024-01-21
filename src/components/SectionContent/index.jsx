@@ -6,7 +6,7 @@ import Heading from '../Heading';
 const SectionContent = ({ title, html, background = false }) => {
   return (
     <SectionBackground background={background}>
-      <Styled.Container background={background}>
+      <Styled.Container background={+background}>
         <Styled.TitleContainer>
           <Heading uppercase>{title}</Heading>
         </Styled.TitleContainer>

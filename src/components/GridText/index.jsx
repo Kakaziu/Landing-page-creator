@@ -7,7 +7,7 @@ import TextComponent from '../TextComponent';
 const GridText = ({ title, description, grid = [], background = false }) => {
   return (
     <SectionBackground background={background}>
-      <Styled.Container background={background}>
+      <Styled.Container background={+background}>
         <Styled.TitleContainer>
           <Heading uppercase>{title}</Heading>
           <TextComponent>{description}</TextComponent>

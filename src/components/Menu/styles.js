@@ -8,7 +8,7 @@ const menuOnVisible = () => css`
 `;
 
 export const Container = styled.div`
-  ${({ theme, menuVisible }) => css`
+  ${({ theme, visible }) => css`
   position: fixed;
   z-index: 5;
   padding: 10px 0px;
@@ -34,7 +34,7 @@ export const Container = styled.div`
       align-items: center;
       visibility: hidden;
       opacity: 0;
-      ${menuVisible && menuOnVisible()}
+      ${visible === 1 && menuOnVisible()}
 
       ${LogoLink} {
         margin-bottom: 3rem;
