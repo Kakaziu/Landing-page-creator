@@ -1,4 +1,4 @@
-export default [
+export const pageData = [
   {
     id: 1,
     attributes: {
@@ -176,7 +176,12 @@ export default [
         logo_title: 'logo',
         logo_link: '#',
         image_logo: {
-          data: null,
+          data: {
+            id: 1,
+            attributes: {
+              url: 'a.svg',
+            },
+          },
         },
         menu_links: [
           {
@@ -208,3 +213,43 @@ export default [
     },
   },
 ];
+
+export const dataMenu = {
+  id: 1,
+  logo_title: 'logo',
+  logo_link: '#',
+  image_logo: {
+    data: {
+      id: 1,
+      attributes: {
+        url: 'a.svg',
+      },
+    },
+  },
+  menu_links: [
+    {
+      id: 1,
+      text: 'Home',
+      url: '#home',
+      open_in_new_tab: false,
+    },
+    {
+      id: 2,
+      text: 'Sobre',
+      url: '#sobre',
+      open_in_new_tab: false,
+    },
+    {
+      id: 3,
+      text: 'Depoimentos',
+      url: '#depoimentos',
+      open_in_new_tab: false,
+    },
+    {
+      id: 4,
+      text: 'Contato',
+      url: '#contato',
+      open_in_new_tab: false,
+    },
+  ],
+};

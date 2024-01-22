@@ -1,5 +1,5 @@
 import { mapData } from './map-data';
-import mock from './mock';
+import { pageData as dataPage } from './mock';
 
 describe('map-data', () => {
   it('should return a predifined data when no have data', () => {
@@ -13,7 +13,7 @@ describe('map-data', () => {
   });
 
   it('should return correct data', () => {
-    const pageData = mapData(mock)[0];
+    const pageData = mapData(dataPage)[0];
 
     expect(pageData.title).toBe('Página 1');
     expect(pageData.slug).toBe('page-1');
