@@ -22,6 +22,8 @@ exports[`<LogoLink/> should match snapshot 1`] = `
 <div>
   <h1
     class="c0"
+    isdark="1"
+    uppercase="1"
   >
     <a
       class="c1"

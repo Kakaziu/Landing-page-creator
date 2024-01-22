@@ -65,12 +65,14 @@ exports[`<GridImage/> should render with background 1`] = `
 
 <div>
   <div
+    background="0"
     class="c0"
   >
     <div
       class="c1"
     >
       <div
+        background="0"
         class="c2"
       >
         <div
@@ -78,6 +80,8 @@ exports[`<GridImage/> should render with background 1`] = `
         >
           <h1
             class="c4 c5"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -210,12 +214,14 @@ exports[`<GridImage/> should render without background 1`] = `
 
 <div>
   <div
+    background="0"
     class="c0"
   >
     <div
       class="c1"
     >
       <div
+        background="0"
         class="c2"
       >
         <div
@@ -223,6 +229,8 @@ exports[`<GridImage/> should render without background 1`] = `
         >
           <h1
             class="c4 c5"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>

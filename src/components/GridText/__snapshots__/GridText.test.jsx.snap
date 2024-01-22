@@ -61,12 +61,14 @@ exports[`<GridText/> should match snapshot 1`] = `
 
 <div>
   <div
+    background="0"
     class="c0"
   >
     <div
       class="c1"
     >
       <div
+        background="0"
         class="c2"
       >
         <div
@@ -74,6 +76,8 @@ exports[`<GridText/> should match snapshot 1`] = `
         >
           <h1
             class="c4 c5"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -91,6 +95,8 @@ exports[`<GridText/> should match snapshot 1`] = `
           >
             <h1
               class="c4 c9"
+              isdark="1"
+              uppercase="0"
             >
               Teste 1
             </h1>
@@ -105,6 +111,8 @@ exports[`<GridText/> should match snapshot 1`] = `
           >
             <h1
               class="c4 c9"
+              isdark="1"
+              uppercase="0"
             >
               Teste 2
             </h1>
@@ -119,6 +127,8 @@ exports[`<GridText/> should match snapshot 1`] = `
           >
             <h1
               class="c4 c9"
+              isdark="1"
+              uppercase="0"
             >
               Teste 3
             </h1>

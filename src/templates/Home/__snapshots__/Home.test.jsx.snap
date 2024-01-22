@@ -273,6 +273,7 @@ exports[`render <Home /> should render home 1`] = `
   </button>
   <div
     class="c1"
+    visible="0"
   >
     <div
       class="c2 c3"
@@ -282,6 +283,8 @@ exports[`render <Home /> should render home 1`] = `
       >
         <h1
           class="c5 c6"
+          isdark="1"
+          uppercase="1"
         >
           <a
             class="c7 c8"
@@ -370,12 +373,14 @@ exports[`render <Home /> should render home 1`] = `
     </div>
   </div>
   <div
+    background="1"
     class="c11"
   >
     <div
       class="c2 c3"
     >
       <div
+        background="1"
         class="c12"
       >
         <div
@@ -383,6 +388,8 @@ exports[`render <Home /> should render home 1`] = `
         >
           <h1
             class="c5 c6"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -400,6 +407,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 1
             </h1>
@@ -414,6 +423,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 2
             </h1>
@@ -428,6 +439,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 3
             </h1>
@@ -442,12 +455,14 @@ exports[`render <Home /> should render home 1`] = `
     </div>
   </div>
   <div
+    background="0"
     class="c18"
   >
     <div
       class="c2 c3"
     >
       <div
+        background="0"
         class="c19"
       >
         <div
@@ -455,6 +470,8 @@ exports[`render <Home /> should render home 1`] = `
         >
           <h1
             class="c5 c6"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -472,6 +489,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 1
             </h1>
@@ -486,6 +505,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 2
             </h1>
@@ -500,6 +521,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 3
             </h1>
@@ -514,12 +537,14 @@ exports[`render <Home /> should render home 1`] = `
     </div>
   </div>
   <div
+    background="1"
     class="c11"
   >
     <div
       class="c2 c3"
     >
       <div
+        background="1"
         class="c12"
       >
         <div
@@ -527,6 +552,8 @@ exports[`render <Home /> should render home 1`] = `
         >
           <h1
             class="c5 c6"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -544,6 +571,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 1
             </h1>
@@ -558,6 +587,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 2
             </h1>
@@ -572,6 +603,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 3
             </h1>
@@ -586,12 +619,14 @@ exports[`render <Home /> should render home 1`] = `
     </div>
   </div>
   <div
+    background="0"
     class="c18"
   >
     <div
       class="c2 c3"
     >
       <div
+        background="0"
         class="c19"
       >
         <div
@@ -599,6 +634,8 @@ exports[`render <Home /> should render home 1`] = `
         >
           <h1
             class="c5 c6"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -616,6 +653,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 1
             </h1>
@@ -630,6 +669,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 2
             </h1>
@@ -644,6 +685,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 3
             </h1>
@@ -658,12 +701,14 @@ exports[`render <Home /> should render home 1`] = `
     </div>
   </div>
   <div
+    background="1"
     class="c11"
   >
     <div
       class="c2 c3"
     >
       <div
+        background="1"
         class="c12"
       >
         <div
@@ -671,6 +716,8 @@ exports[`render <Home /> should render home 1`] = `
         >
           <h1
             class="c5 c6"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -688,6 +735,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 1
             </h1>
@@ -702,6 +751,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 2
             </h1>
@@ -716,6 +767,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 3
             </h1>
@@ -730,12 +783,14 @@ exports[`render <Home /> should render home 1`] = `
     </div>
   </div>
   <div
+    background="0"
     class="c18"
   >
     <div
       class="c2 c3"
     >
       <div
+        background="0"
         class="c19"
       >
         <div
@@ -743,6 +798,8 @@ exports[`render <Home /> should render home 1`] = `
         >
           <h1
             class="c5 c6"
+            isdark="1"
+            uppercase="1"
           >
             My grid
           </h1>
@@ -760,6 +817,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 1
             </h1>
@@ -774,6 +833,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 2
             </h1>
@@ -788,6 +849,8 @@ exports[`render <Home /> should render home 1`] = `
           >
             <h1
               class="c5 c17"
+              isdark="1"
+              uppercase="0"
             >
               Teste 3
             </h1>

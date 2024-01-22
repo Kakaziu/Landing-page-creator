@@ -66,6 +66,7 @@ exports[`<SectionBox/> should render section box 1`] = `
 
 <div>
   <div
+    background="0"
     class="c0"
   >
     <div
@@ -76,6 +77,8 @@ exports[`<SectionBox/> should render section box 1`] = `
       >
         <h1
           class="c3 c4"
+          isdark="1"
+          uppercase="0"
         >
           Section Box
         </h1>

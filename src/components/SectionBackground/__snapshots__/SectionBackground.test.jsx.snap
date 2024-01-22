@@ -18,6 +18,7 @@ exports[`<SectionBackground/> should render with background dark 1`] = `
 
 <div>
   <div
+    background="1"
     class="c0"
   >
     <div
@@ -49,6 +50,7 @@ exports[`<SectionBackground/> should render with background light 1`] = `
 
 <div>
   <div
+    background="0"
     class="c0"
   >
     <div

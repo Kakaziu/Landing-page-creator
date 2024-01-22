@@ -10,6 +10,8 @@ exports[`<Heading /> should match snapshot 1`] = `
 <div>
   <h6
     class="c0"
+    isdark="1"
+    uppercase="0"
   >
     texto
   </h6>

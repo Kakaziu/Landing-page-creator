@@ -151,6 +151,7 @@ exports[`<Menu/> should not render links 1`] = `
   </button>
   <div
     class="c1"
+    visible="0"
   >
     <div
       class="c2 c3"
@@ -160,6 +161,8 @@ exports[`<Menu/> should not render links 1`] = `
       >
         <h1
           class="c5"
+          isdark="1"
+          uppercase="1"
         >
           <a
             class="c6 c7"
@@ -355,6 +358,7 @@ exports[`<Menu/> should render logo and nav 1`] = `
   </button>
   <div
     class="c1"
+    visible="0"
   >
     <div
       class="c2 c3"
@@ -364,6 +368,8 @@ exports[`<Menu/> should render logo and nav 1`] = `
       >
         <h1
           class="c5"
+          isdark="1"
+          uppercase="1"
         >
           <a
             class="c6 c7"
