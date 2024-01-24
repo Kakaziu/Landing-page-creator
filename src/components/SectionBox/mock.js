@@ -12,8 +12,8 @@ export default {
     },
   ],
   button: {
-    text: 'Clique aqui',
-    url: '#',
+    textButton: 'Clique aqui',
+    urlButton: '#',
     size: 'small',
   },
 };

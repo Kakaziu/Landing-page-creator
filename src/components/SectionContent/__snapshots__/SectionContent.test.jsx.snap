@@ -22,6 +22,26 @@ exports[`<SectionContent/> should render SectionContent 1`] = `
   font-size: 3.2rem;
 }
 
+.c8 {
+  display: block;
+}
+
+.c9 {
+  font-weight: bold;
+  border: none;
+  background-color: #dc143c;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 8px 40px;
+  font-size: 2.4rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.c9:hover {
+  background-color: #b81132;
+}
+
 .c3 .c4 {
   margin-bottom: 1.6rem;
   text-align: center;
@@ -39,6 +59,11 @@ exports[`<SectionContent/> should render SectionContent 1`] = `
 .c2 .c4 {
   margin-bottom: 1.6rem;
   color: #0A1128;
+}
+
+.c2 .c7 {
+  margin-top: 2.4rem;
+  text-align: center;
 }
 
 <div>
@@ -80,6 +105,16 @@ exports[`<SectionContent/> should render SectionContent 1`] = `
           
   
         </div>
+        <a
+          class="c7 c8"
+          href="#"
+        >
+          <button
+            class="c9"
+          >
+            Clique aqui
+          </button>
+        </a>
       </div>
     </div>
   </div>

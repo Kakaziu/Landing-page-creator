@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should match snapshot 1`] = `
+.c0 {
+  display: block;
+}
+
+.c1 {
+  font-weight: bold;
+  border: none;
+  background-color: #dc143c;
+  color: #FFFFFF;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.c1:hover {
+  background-color: #b81132;
+}
+
+<div>
+  <a
+    class="c0"
+    href="#"
+  >
+    <button
+      class="c1"
+    >
+      Oi
+    </button>
+  </a>
+</div>
+`;

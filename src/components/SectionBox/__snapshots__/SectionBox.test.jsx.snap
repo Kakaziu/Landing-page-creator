@@ -11,7 +11,11 @@ exports[`<SectionBox/> should render section box 1`] = `
   font-size: 1.6rem;
 }
 
-.c7 {
+.c8 {
+  display: block;
+}
+
+.c9 {
   font-weight: bold;
   border: none;
   background-color: #dc143c;
@@ -23,7 +27,7 @@ exports[`<SectionBox/> should render section box 1`] = `
   transition: all 0.3s ease-in-out;
 }
 
-.c7:hover {
+.c9:hover {
   background-color: #b81132;
 }
 
@@ -45,7 +49,7 @@ exports[`<SectionBox/> should render section box 1`] = `
   text-align: center;
 }
 
-.c2 >.{
+.c2 >.c7 {
   margin-top: 2.4rem;
 }
 
@@ -98,11 +102,11 @@ exports[`<SectionBox/> should render section box 1`] = `
           There are 3
         </p>
         <a
-          class=""
+          class="c7 c8"
           href="#"
         >
           <button
-            class="c7"
+            class="c9"
           >
             Clique aqui
           </button>
