@@ -1,5 +1,5 @@
 import { mapMenu, mapMenuLinks } from './map-menu';
-import { dataMenu } from './mock';
+import { dataMenu, menuLinks } from './mock';
 
 describe('map-menu', () => {
   it('should return a predefined object when have no data', () => {
@@ -30,5 +30,13 @@ describe('map-menu', () => {
     expect(linksData.newTab).toBe(false);
     expect(linksData.text).toBe('');
     expect(linksData.url).toBe('');
+  });
+
+  it('should map test when links passed', () => {
+    const linksData = mapMenuLinks(menuLinks)[0];
+
+    expect(linksData.newTab).toBe(false);
+    expect(linksData.text).toBe('Home');
+    expect(linksData.url).toBe('#home');
   });
 });
