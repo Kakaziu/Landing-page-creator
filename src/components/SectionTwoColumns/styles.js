@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Title } from '../Heading/styles';
+import { LinkContainer as Button } from '../Button/styles';
 
 export const TextContainer = styled.div`
   ${({ theme }) => css`
@@ -35,6 +36,10 @@ export const Container = styled.div`
       color: ${
         background === 1 ? theme.colors.white : theme.colors.primaryColor
       }
+    }
+
+    ${Button} {
+      margin-top: ${theme.spacings.medium};
     }
   `}
 `;
