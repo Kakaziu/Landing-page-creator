@@ -280,3 +280,32 @@ export const menuLinks = [
     open_in_new_tab: false,
   },
 ];
+
+export const sectionTwoColumnsMock = {
+  id: 1,
+  __component: 'section.section-two-columns',
+  title: 'Section two columns',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu porttitor augue, ut auctor sem. Cras rhoncus pellentesque ante non pharetra. Maecenas pretium consectetur sapien pellentesque rutrum. Aliquam vitae tempor purus, at rhoncus orci. Suspendisse a sem non dolor sagittis mattis.',
+  image: {
+    data: {
+      id: 1,
+      attributes: {
+        alternativeText: 'image',
+        url: 'b.svg',
+      },
+    },
+  },
+  button: {
+    id: 1,
+    text_button: 'Clique aqui',
+    url: '#',
+    size: 'big',
+  },
+  metadata: {
+    id: 1,
+    name: 'section-two-columns-1',
+    section_id: 'hero',
+    background: true,
+  },
+};

@@ -1,3 +1,5 @@
+import { mapButton } from './map-button';
+
 /* eslint-disable no-unused-vars */
 export const mapSections = (sections = []) => {
   return sections.map((section) => {
@@ -30,7 +32,7 @@ export const mapSectionTwoColumns = (section = {}) => {
       } = '',
     } = '',
     button = {},
-    metadata: { section_id: sectionId, background = '' } = '',
+    metadata: { section_id: sectionId = '', background = false } = '',
   } = section;
 
   return {
@@ -39,7 +41,7 @@ export const mapSectionTwoColumns = (section = {}) => {
     description,
     srcImg,
     altText,
-    button,
+    button: mapButton(button),
     sectionId,
     background,
   };
