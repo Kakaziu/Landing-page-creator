@@ -29,4 +29,9 @@ export default {
       srcImg: 'https://source.unsplash.com/random/800x800?r=6',
     },
   ],
+  button: {
+    textButton: 'Clique aqui',
+    urlButton: '#',
+    size: 'big',
+  },
 };

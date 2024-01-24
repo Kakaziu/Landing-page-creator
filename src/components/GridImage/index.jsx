@@ -2,9 +2,16 @@ import P from 'prop-types';
 import SectionBackground from '../SectionBackground';
 import * as Styled from './styles';
 import Heading from '../Heading';
+import Button from '../Button';
 import TextComponent from '../TextComponent';
 
-const GridImage = ({ title, description, grid = [], background = false }) => {
+const GridImage = ({
+  title,
+  description,
+  grid = [],
+  background = false,
+  button,
+}) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container background={+background}>
@@ -19,6 +26,11 @@ const GridImage = ({ title, description, grid = [], background = false }) => {
             </Styled.GridElement>
           ))}
         </Styled.GridContainer>
+        {button && (
+          <Button url={button.urlButton} size={button.size}>
+            {button.textButton}
+          </Button>
+        )}
       </Styled.Container>
     </SectionBackground>
   );
@@ -34,6 +46,7 @@ GridImage.propTypes = {
     }),
   ),
   background: P.bool,
+  button: Button.propTypes,
 };
 
 export default GridImage;

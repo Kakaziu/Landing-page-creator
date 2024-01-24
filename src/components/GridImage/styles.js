@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Title as HeadingContainer } from '../Heading/styles';
+import { LinkContainer as Button } from '../Button/styles';
 
 export const GridElement = styled.div`
   ${({ theme }) => css`
@@ -48,6 +49,11 @@ export const Container = styled.div`
       color: ${
         background === 1 ? theme.colors.white : theme.colors.primaryColor
       }
+    }
+
+    ${Button} {
+      margin-top: ${theme.spacings.large};
+      text-align: center;
     }
   `}
 `;
