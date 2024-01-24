@@ -2,9 +2,16 @@ import P from 'prop-types';
 import SectionBackground from '../SectionBackground';
 import * as Styled from './styles';
 import Heading from '../Heading';
+import Button from '../Button';
 import TextComponent from '../TextComponent';
 
-const GridText = ({ title, description, grid = [], background = false }) => {
+const GridText = ({
+  title,
+  description,
+  grid = [],
+  background = false,
+  button,
+}) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container background={+background}>
@@ -20,6 +27,9 @@ const GridText = ({ title, description, grid = [], background = false }) => {
             </Styled.GridElement>
           ))}
         </Styled.GridContainer>
+        <Button url={button.urlButton} size={button.size}>
+          {button.textButton}
+        </Button>
       </Styled.Container>
     </SectionBackground>
   );
@@ -35,6 +45,7 @@ GridText.propTypes = {
     }),
   ),
   background: P.bool,
+  button: Button.propTypes,
 };
 
 export default GridText;

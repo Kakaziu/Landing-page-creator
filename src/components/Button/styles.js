@@ -12,7 +12,9 @@ const buttonSizes = {
   `,
 };
 
-export const LinkContainer = styled.a``;
+export const LinkContainer = styled.a`
+  display: block;
+`;
 
 export const Button = styled.button`
   ${({ theme, size }) => css`
