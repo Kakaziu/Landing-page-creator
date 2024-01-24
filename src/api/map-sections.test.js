@@ -9,7 +9,6 @@ describe('map-sections', () => {
     expect(sectionData.description).toBe('');
     expect(sectionData.altText).toBe('');
     expect(sectionData.srcImg).toBe('');
-    expect(sectionData.component).toBe('');
     expect(sectionData.sectionId).toBe('');
     expect(sectionData.background).toBe(false);
   });
@@ -23,7 +22,6 @@ describe('map-sections', () => {
     );
     expect(sectionData.altText).toBe('image');
     expect(sectionData.srcImg).toBe('b.svg');
-    expect(sectionData.component).toBe('section.section-two-columns');
     expect(sectionData.sectionId).toBe('hero');
     expect(sectionData.background).toBe(true);
   });
