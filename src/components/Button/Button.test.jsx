@@ -33,4 +33,9 @@ describe('<Button />', () => {
 
     expect(link).toHaveAttribute('href', '#');
   });
+
+  it('should match snapshot', () => {
+    const { container } = renderTheme(<Button>Oi</Button>);
+    expect(container).toMatchSnapshot();
+  });
 });
