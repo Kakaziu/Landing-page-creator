@@ -13,11 +13,9 @@ const SectionBox = ({ background, title, paragraphs = [], button = null }) => {
         {paragraphs.map((paragraph, index) => (
           <TextComponent key={index}>{paragraph.text}</TextComponent>
         ))}
-        {!button ? (
-          <></>
-        ) : (
-          <Button size={button.size} url={button.url}>
-            {button.text}
+        {button && (
+          <Button url={button.urlButton} size={button.size}>
+            {button.textButton}
           </Button>
         )}
       </Styled.Container>
