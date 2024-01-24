@@ -47,7 +47,26 @@ export const mapSectionTwoColumns = (section = {}) => {
   };
 };
 
-export const mapSectionBox = (section = {}) => {};
+export const mapSectionBox = (section = {}) => {
+  const {
+    __component: component = '',
+    title = '',
+    paragraph: paragraphs = [],
+    button = {},
+    metadata: { section_id: sectionId = '', background = false } = '',
+  } = section;
+
+  return {
+    component,
+    title,
+    paragraphs: paragraphs.map((paragraph) => {
+      return paragraph.text;
+    }),
+    button: mapButton(button),
+    sectionId,
+    background,
+  };
+};
 
 export const mapSectionContent = (section = {}) => {};
 

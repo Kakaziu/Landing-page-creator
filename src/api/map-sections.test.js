@@ -1,4 +1,4 @@
-import { mapSectionTwoColumns } from './map-sections';
+import { mapSectionBox, mapSectionTwoColumns } from './map-sections';
 import { sectionTwoColumnsMock } from './mock';
 
 describe('map-sections', () => {
@@ -25,4 +25,10 @@ describe('map-sections', () => {
     expect(sectionData.sectionId).toBe('hero');
     expect(sectionData.background).toBe(true);
   });
+
+  // it('should return a predefined object when section box no have data', () => {
+  //   const sectionData = mapSectionBox()
+
+  //   expect()
+  // })
 });

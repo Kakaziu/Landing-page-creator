@@ -309,3 +309,30 @@ export const sectionTwoColumnsMock = {
     background: true,
   },
 };
+
+export const sectionBoxMock = {
+  id: 1,
+  __component: 'section.section-box',
+  title: 'Section Box',
+  button: null,
+  paragraph: [
+    {
+      id: 1,
+      text: "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    },
+    {
+      id: 2,
+      text: "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    },
+    {
+      id: 3,
+      text: "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
+    },
+  ],
+  section_metadata: {
+    id: 5,
+    name: 'section_box',
+    section_id: 'vvvvvv',
+    background: false,
+  },
+};
