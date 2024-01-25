@@ -60,7 +60,9 @@ export const mapSectionBox = (section = {}) => {
     component,
     title,
     paragraphs: paragraphs.map((paragraph) => {
-      return paragraph.text;
+      const { text = '' } = paragraph;
+
+      return text;
     }),
     button: mapButton(button),
     sectionId,

@@ -26,9 +26,12 @@ describe('map-sections', () => {
     expect(sectionData.background).toBe(true);
   });
 
-  // it('should return a predefined object when section box no have data', () => {
-  //   const sectionData = mapSectionBox()
+  it('should return a predefined object when section box no have data', () => {
+    const sectionData = mapSectionBox();
 
-  //   expect()
-  // })
+    expect(sectionData.title).toBe('');
+    expect(sectionData.sectionId).toBe('');
+    expect(sectionData.paragraphs).toEqual([]);
+    expect(sectionData.background).toBe(false);
+  });
 });
