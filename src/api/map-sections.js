@@ -23,7 +23,7 @@ export const mapSections = (sections = []) => {
 
 export const mapSectionTwoColumns = (section = {}) => {
   const {
-    __component: component = '',
+    __component: component = 'section.section-two-columns',
     title = '',
     description = '',
     image: {
@@ -49,7 +49,7 @@ export const mapSectionTwoColumns = (section = {}) => {
 
 export const mapSectionBox = (section = {}) => {
   const {
-    __component: component = '',
+    __component: component = 'section.section-box',
     title = '',
     paragraph: paragraphs = [],
     button = {},
@@ -72,7 +72,7 @@ export const mapSectionBox = (section = {}) => {
 
 export const mapSectionContent = (section = {}) => {
   const {
-    __component: component = '',
+    __component: component = 'section.section-content',
     title = '',
     content: [{ children: [{ text: html = '' } = ''] = '' } = ''] = '',
     button = {},
@@ -91,7 +91,6 @@ export const mapSectionContent = (section = {}) => {
 
 export const mapSectionGridText = (section = {}) => {
   const {
-    __component: component = '',
     title = '',
     description = '',
     text_grid: gridText = [],
@@ -100,7 +99,7 @@ export const mapSectionGridText = (section = {}) => {
   } = section;
 
   return {
-    component,
+    component: 'section.section-grid-text',
     title,
     description,
     gridText: gridText.map((grid) => {

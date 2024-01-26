@@ -379,3 +379,43 @@ export const sectionContentMock = {
     background: true,
   },
 };
+
+export const gridTextMock = {
+  id: 1,
+  __component: 'section.section-grid',
+  title: 'grid',
+  description: 'Lorem ipsum',
+  button: {
+    id: 3,
+    text_button: 'aaaaa',
+    url: '#',
+    size: 'big',
+  },
+  metadata: {
+    id: 3,
+    name: 'grid-1',
+    section_id: 'depoimentos',
+    background: true,
+  },
+  text_grid: [
+    {
+      id: 1,
+      title: 'grid 1',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.',
+    },
+    {
+      id: 2,
+      title: 'grid 2',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.',
+    },
+    {
+      id: 3,
+      title: 'grid 3',
+      description:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.',
+    },
+  ],
+  image_grid: [],
+};
