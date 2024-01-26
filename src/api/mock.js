@@ -352,7 +352,7 @@ export const sectionContentMock = {
       children: [
         {
           type: 'text',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ',
+          text: 'Lorem ipsum',
         },
         {
           type: 'text',

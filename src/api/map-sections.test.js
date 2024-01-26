@@ -1,5 +1,13 @@
-import { mapSectionBox, mapSectionTwoColumns } from './map-sections';
-import { sectionBoxMock, sectionTwoColumnsMock } from './mock';
+import {
+  mapSectionBox,
+  mapSectionContent,
+  mapSectionTwoColumns,
+} from './map-sections';
+import {
+  sectionBoxMock,
+  sectionContentMock,
+  sectionTwoColumnsMock,
+} from './mock';
 
 describe('map-sections', () => {
   it('should return a predefined object when section two columns no have data', () => {
@@ -31,6 +39,11 @@ describe('map-sections', () => {
 
     expect(sectionData.title).toBe('');
     expect(sectionData.sectionId).toBe('');
+    expect(sectionData.button).toEqual({
+      textButton: '',
+      urlButton: '',
+      size: '',
+    });
     expect(sectionData.paragraphs).toEqual([]);
     expect(sectionData.background).toBe(false);
   });
@@ -43,5 +56,29 @@ describe('map-sections', () => {
     expect(sectionData.sectionId).toBe('vvvvvv');
     expect(sectionData.button.textButton).toBe('botao');
     expect(sectionData.background).toBe(false);
+  });
+
+  it('should return a predefined object when section content no have data', () => {
+    const sectionData = mapSectionContent();
+
+    expect(sectionData.title).toBe('');
+    expect(sectionData.html).toBe('');
+    expect(sectionData.button).toEqual({
+      textButton: '',
+      urlButton: '',
+      size: '',
+    });
+    expect(sectionData.sectionId).toBe('');
+    expect(sectionData.background).toBe(false);
+  });
+
+  it('should map section content with correct data', () => {
+    const sectionData = mapSectionContent(sectionContentMock);
+
+    expect(sectionData.title).toBe('contato');
+    expect(sectionData.html).toBe('Lorem ipsum');
+    expect(sectionData.button.textButton).toBe('botao');
+    expect(sectionData.sectionId).toBe('contato');
+    expect(sectionData.background).toBe(true);
   });
 });
