@@ -89,6 +89,32 @@ export const mapSectionContent = (section = {}) => {
   };
 };
 
-export const mapSectionGridText = (section = {}) => {};
+export const mapSectionGridText = (section = {}) => {
+  const {
+    __component: component = '',
+    title = '',
+    description = '',
+    text_grid: gridText = [],
+    button = {},
+    metadata: { section_id: sectionId = '', background = false } = '',
+  } = section;
+
+  return {
+    component,
+    title,
+    description,
+    gridText: gridText.map((grid) => {
+      const { title = '', description = '' } = grid;
+
+      return {
+        title,
+        description,
+      };
+    }),
+    button: mapButton(button),
+    sectionId,
+    background,
+  };
+};
 
 export const mapSectionGridImage = (section = {}) => {};
