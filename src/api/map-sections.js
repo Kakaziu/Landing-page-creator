@@ -70,7 +70,24 @@ export const mapSectionBox = (section = {}) => {
   };
 };
 
-export const mapSectionContent = (section = {}) => {};
+export const mapSectionContent = (section = {}) => {
+  const {
+    __component: component = '',
+    title = '',
+    content: [{ children: [{ text: html = '' } = ''] = '' } = ''] = '',
+    button = {},
+    metadata: { section_id: sectionId = '', background = false } = '',
+  } = section;
+
+  return {
+    component,
+    title,
+    html,
+    button: mapButton(button),
+    sectionId,
+    background,
+  };
+};
 
 export const mapSectionGridText = (section = {}) => {};
 

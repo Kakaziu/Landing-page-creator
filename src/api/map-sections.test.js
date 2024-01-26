@@ -1,5 +1,5 @@
 import { mapSectionBox, mapSectionTwoColumns } from './map-sections';
-import { sectionTwoColumnsMock } from './mock';
+import { sectionBoxMock, sectionTwoColumnsMock } from './mock';
 
 describe('map-sections', () => {
   it('should return a predefined object when section two columns no have data', () => {
@@ -32,6 +32,16 @@ describe('map-sections', () => {
     expect(sectionData.title).toBe('');
     expect(sectionData.sectionId).toBe('');
     expect(sectionData.paragraphs).toEqual([]);
+    expect(sectionData.background).toBe(false);
+  });
+
+  it('should map section box with correct data', () => {
+    const sectionData = mapSectionBox(sectionBoxMock);
+
+    expect(sectionData.title).toBe('Section Box');
+    expect(sectionData.paragraphs[0]).toBe('paragraph');
+    expect(sectionData.sectionId).toBe('vvvvvv');
+    expect(sectionData.button.textButton).toBe('botao');
     expect(sectionData.background).toBe(false);
   });
 });

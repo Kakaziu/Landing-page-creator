@@ -314,7 +314,12 @@ export const sectionBoxMock = {
   id: 1,
   __component: 'section.section-box',
   title: 'Section Box',
-  button: null,
+  button: {
+    id: 4,
+    text_button: 'botao',
+    url: '#',
+    size: 'big',
+  },
   paragraph: [
     {
       id: 1,
@@ -329,10 +334,48 @@ export const sectionBoxMock = {
       text: "here are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
     },
   ],
-  section_metadata: {
+  metadata: {
     id: 5,
     name: 'section_box',
     section_id: 'vvvvvv',
     background: false,
+  },
+};
+
+export const sectionContentMock = {
+  id: 1,
+  __component: 'section.section-content',
+  title: 'contato',
+  content: [
+    {
+      type: 'paragraph',
+      children: [
+        {
+          type: 'text',
+          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ',
+        },
+        {
+          type: 'text',
+          text: 'ipsum dolor sit amet',
+          bold: true,
+        },
+        {
+          type: 'text',
+          text: ', consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.',
+        },
+      ],
+    },
+  ],
+  button: {
+    id: 4,
+    text_button: 'botao',
+    url: '#',
+    size: 'big',
+  },
+  metadata: {
+    id: 4,
+    name: 'section-content',
+    section_id: 'contato',
+    background: true,
   },
 };
