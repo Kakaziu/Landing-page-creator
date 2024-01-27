@@ -116,4 +116,35 @@ export const mapSectionGridText = (section = {}) => {
   };
 };
 
-export const mapSectionGridImage = (section = {}) => {};
+export const mapSectionGridImage = (section = {}) => {
+  const {
+    title = '',
+    description = '',
+    image_grid: gridImage = [],
+    button = {},
+    metadata: { section_id: sectionId = '', background = false } = '',
+  } = section;
+
+  return {
+    component: 'section.section-grid-image',
+    title,
+    description,
+    gridImage: gridImage.map((grid) => {
+      const {
+        data: [
+          {
+            attributes: { alternativeText: altText, url: srcImg = '' } = '',
+          } = '',
+        ] = '',
+      } = grid;
+
+      return {
+        altText,
+        srcImg,
+      };
+    }),
+    button: mapButton(button),
+    sectionId,
+    background,
+  };
+};

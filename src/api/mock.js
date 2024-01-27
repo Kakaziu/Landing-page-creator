@@ -419,3 +419,62 @@ export const gridTextMock = {
   ],
   image_grid: [],
 };
+
+export const gridImageMock = {
+  id: 3,
+  __component: 'section.section-grid',
+  title: 'grid  2',
+  description: 'grid 2 image',
+  button: null,
+  metadata: {
+    id: 8,
+    name: 'grid-2',
+    section_id: 'grid-image',
+    background: false,
+  },
+  text_grid: [],
+  image_grid: [
+    {
+      id: 1,
+      images: {
+        data: [
+          {
+            id: 1,
+            attributes: {
+              alternativeText: null,
+              url: 'https://res.cloudinary.com/drplqaxi0/image/upload/v1704251425/pexels_angel_rondon_19483671_99d3895603.jpg',
+            },
+          },
+        ],
+      },
+    },
+    {
+      id: 2,
+      images: {
+        data: [
+          {
+            id: 1,
+            attributes: {
+              alternativeText: null,
+              url: 'https://res.cloudinary.com/drplqaxi0/image/upload/v1704251425/pexels_angel_rondon_19483671_99d3895603.jpg',
+            },
+          },
+        ],
+      },
+    },
+    {
+      id: 3,
+      images: {
+        data: [
+          {
+            id: 1,
+            attributes: {
+              alternativeText: null,
+              url: 'https://res.cloudinary.com/drplqaxi0/image/upload/v1704251425/pexels_angel_rondon_19483671_99d3895603.jpg',
+            },
+          },
+        ],
+      },
+    },
+  ],
+};
