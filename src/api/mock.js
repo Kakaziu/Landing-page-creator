@@ -425,7 +425,12 @@ export const gridImageMock = {
   __component: 'section.section-grid',
   title: 'grid 2',
   description: 'grid 2 image',
-  button: null,
+  button: {
+    id: 3,
+    text_button: 'aaaaa',
+    url: '#',
+    size: 'big',
+  },
   metadata: {
     id: 8,
     name: 'grid-2',

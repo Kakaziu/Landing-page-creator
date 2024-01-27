@@ -12,12 +12,14 @@ export const mapSections = (sections = []) => {
     } else if (component === 'section.section-content') {
       return mapSectionContent(section);
     } else if (component === 'section.section-grid') {
-      const { text_grid: gridText = '', image_grid: gridImage = '' } = section;
+      const { text_grid: gridText = [], image_grid: gridImage = [] } = section;
 
       if (gridText.length > 0) return mapSectionGridText(section);
 
-      if (gridImage > 0) return mapSectionGridImage(section);
+      if (gridImage.length > 0) return mapSectionGridImage(section);
     }
+
+    return section;
   });
 };
 

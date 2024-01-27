@@ -4,16 +4,58 @@ import {
   mapSectionGridImage,
   mapSectionGridText,
   mapSectionTwoColumns,
+  mapSections,
 } from './map-sections';
 import {
   gridImageMock,
   gridTextMock,
+  pageData,
   sectionBoxMock,
   sectionContentMock,
   sectionTwoColumnsMock,
 } from './mock';
 
 describe('map-sections', () => {
+  it('should return a empty array when no have data', () => {
+    const sectionData = mapSections();
+
+    expect(sectionData).toEqual([]);
+  });
+
+  it('should test section with invalid data', () => {
+    const withNoTextOrImageGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+      },
+    ]);
+
+    const WithNoComponent = mapSections([{}]);
+    expect(withNoTextOrImageGrid).toEqual([
+      { __component: 'section.section-grid' },
+    ]);
+    expect(WithNoComponent).toEqual([{}]);
+  });
+
+  it('should test section.section-grid with no text_grid or image_grid', () => {
+    const withNoTextOrImageGrid = mapSections([
+      {
+        __component: 'section.section-grid',
+        image_grid: [{}],
+      },
+      {
+        __component: 'section.section-grid',
+        text_grid: [{}],
+      },
+    ]);
+    expect(withNoTextOrImageGrid.length).toBe(2);
+  });
+
+  it('should map data with correct value', () => {
+    const sectionData = mapSections(pageData[0].attributes.sections);
+
+    expect(sectionData[0].component).toBe('section.section-two-columns');
+  });
+
   it('should return a predefined object when section two columns no have data', () => {
     const sectionData = mapSectionTwoColumns();
 
@@ -53,6 +95,14 @@ describe('map-sections', () => {
     });
     expect(sectionData.paragraphs).toEqual([]);
     expect(sectionData.background).toBe(false);
+  });
+
+  it('should return empty paragraphs when paragraph is empty', () => {
+    const sectionData = mapSectionBox({
+      paragraph: [{}],
+    });
+
+    expect(sectionData.paragraphs[0]).toBe('');
   });
 
   it('should map section box with correct data', () => {
@@ -143,7 +193,7 @@ describe('map-sections', () => {
     expect(sectionData.sectionId).toBe('grid-image');
     expect(sectionData.title).toBe('grid 2');
     expect(sectionData.description).toBe('grid 2 image');
-    expect(sectionData.button.textButton).toBe('');
+    expect(sectionData.button.textButton).toBe('aaaaa');
     expect(sectionData.gridImage[0].altText).toBe('image');
     expect(sectionData.gridImage[0].srcImg).toBe('c.svg');
   });
