@@ -9,8 +9,8 @@ exports[`<GridImage/> should render with background 1`] = `
 }
 
 .c0 {
-  background-color: #FFFFFF;
-  color: #0A1128;
+  background-color: #0A1128;
+  color: #FFFFFF;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -70,191 +70,7 @@ exports[`<GridImage/> should render with background 1`] = `
 
 .c2 .c4 {
   margin-bottom: 1.6rem;
-  color: #0A1128;
-}
-
-.c2 .c9 {
-  margin-top: 3.2rem;
-  text-align: center;
-}
-
-.c6 {
-  font-size: 1.6rem;
-}
-
-@media (max-width:768px) {
-  .c7 {
-    grid-template-columns: 1fr;
-  }
-}
-
-<div>
-  <div
-    background="0"
-    class="c0"
-  >
-    <div
-      class="c1"
-    >
-      <div
-        background="0"
-        class="c2"
-      >
-        <div
-          class="c3"
-        >
-          <h1
-            class="c4 c5"
-            isdark="1"
-            uppercase="1"
-          >
-            My grid
-          </h1>
-          <p
-            class="c6"
-          >
-            Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde
-          </p>
-        </div>
-        <div
-          class="c7"
-        >
-          <div
-            class="c8"
-          >
-            <img
-              alt="Teste 1"
-              src="https://source.unsplash.com/random/800x800?r=1"
-            />
-          </div>
-          <div
-            class="c8"
-          >
-            <img
-              alt="Teste 2"
-              src="https://source.unsplash.com/random/800x800?r=2"
-            />
-          </div>
-          <div
-            class="c8"
-          >
-            <img
-              alt="Teste 3"
-              src="https://source.unsplash.com/random/800x800?r=3"
-            />
-          </div>
-          <div
-            class="c8"
-          >
-            <img
-              alt="Teste 4"
-              src="https://source.unsplash.com/random/800x800?r=4"
-            />
-          </div>
-          <div
-            class="c8"
-          >
-            <img
-              alt="Teste 5"
-              src="https://source.unsplash.com/random/800x800?r=5"
-            />
-          </div>
-          <div
-            class="c8"
-          >
-            <img
-              alt="Teste 6"
-              src="https://source.unsplash.com/random/800x800?r=6"
-            />
-          </div>
-        </div>
-        <a
-          class="c9 c10"
-          href="#"
-        >
-          <button
-            class="c11"
-          >
-            Clique aqui
-          </button>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
-`;
-
-exports[`<GridImage/> should render without background 1`] = `
-.c1 {
-  max-width: 120rem;
-  margin: 0 auto;
-  padding: 3.2rem;
-  width: 100%;
-}
-
-.c0 {
-  background-color: #FFFFFF;
-  color: #0A1128;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-}
-
-.c5 {
-  color: #0A1128;
-  text-transform: uppercase;
-  font-size: 3.2rem;
-}
-
-.c10 {
-  display: block;
-}
-
-.c11 {
-  font-weight: bold;
-  border: none;
-  background-color: #dc143c;
   color: #FFFFFF;
-  border-radius: 4px;
-  padding: 8px 40px;
-  font-size: 2.4rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.c11:hover {
-  background-color: #b81132;
-}
-
-.c8 .c4 {
-  margin-bottom: 1.6rem;
-}
-
-.c8 img {
-  width: 100%;
-  transition: all 300ms ease-in-out;
-  cursor: pointer;
-}
-
-.c8 img:hover {
-  transform: scale(1.1);
-}
-
-.c3 .c4 {
-  margin-bottom: 1.6rem;
-}
-
-.c7 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 4.0rem;
-  margin-top: 5.6rem;
-  width: 100%;
-}
-
-.c2 .c4 {
-  margin-bottom: 1.6rem;
-  color: #0A1128;
 }
 
 .c2 .c9 {
@@ -274,14 +90,14 @@ exports[`<GridImage/> should render without background 1`] = `
 
 <div>
   <div
-    background="0"
+    background="1"
     class="c0"
   >
     <div
       class="c1"
     >
       <div
-        background="0"
+        background="1"
         class="c2"
       >
         <div

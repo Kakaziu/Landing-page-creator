@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1705254545272" clover="3.2.0">
-  <project timestamp="1705254545272" name="All files">
-    <metrics statements="81" coveredstatements="80" conditionals="33" coveredconditionals="33" methods="38" coveredmethods="38" elements="152" coveredelements="151" complexity="0" loc="81" ncloc="81" packages="13" files="24" classes="24"/>
+<coverage generated="1706322996609" clover="3.2.0">
+  <project timestamp="1706322996610" name="All files">
+    <metrics statements="191" coveredstatements="177" conditionals="161" coveredconditionals="135" methods="75" coveredmethods="73" elements="427" coveredelements="385" complexity="0" loc="191" ncloc="191" packages="20" files="40" classes="40"/>
     <package name="src">
       <metrics statements="1" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="main.jsx" path="/home/kaua/landing_page_project/src/main.jsx">
@@ -9,189 +9,368 @@
         <line num="6" count="0" type="stmt"/>
       </file>
     </package>
+    <package name="src.api">
+      <metrics statements="61" coveredstatements="48" conditionals="107" coveredconditionals="81" methods="16" coveredmethods="14"/>
+      <file name="map-button.js" path="/home/kaua/landing_page_project/src/api/map-button.js">
+        <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="8" count="12" type="stmt"/>
+      </file>
+      <file name="map-data.js" path="/home/kaua/landing_page_project/src/api/map-data.js">
+        <metrics statements="5" coveredstatements="5" conditionals="12" coveredconditionals="12" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="2" type="stmt"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="13" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="15" count="2" type="stmt"/>
+      </file>
+      <file name="map-menu.js" path="/home/kaua/landing_page_project/src/api/map-menu.js">
+        <metrics statements="9" coveredstatements="9" conditionals="12" coveredconditionals="12" methods="3" coveredmethods="3"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="9" count="2" type="cond" truecount="4" falsecount="0"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="21" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="22" count="5" type="stmt"/>
+        <line num="23" count="9" type="cond" truecount="3" falsecount="0"/>
+        <line num="25" count="9" type="stmt"/>
+        <line num="31" count="9" type="stmt"/>
+      </file>
+      <file name="map-sections.js" path="/home/kaua/landing_page_project/src/api/map-sections.js">
+        <metrics statements="44" coveredstatements="31" conditionals="79" coveredconditionals="53" methods="10" coveredmethods="8"/>
+        <line num="4" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="cond" truecount="0" falsecount="1"/>
+        <line num="8" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="10" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="14" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="15" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="17" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="24" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="39" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="54" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="62" count="2" type="stmt"/>
+        <line num="64" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="67" count="2" type="stmt"/>
+        <line num="71" count="3" type="cond" truecount="0" falsecount="1"/>
+        <line num="73" count="3" type="stmt"/>
+        <line num="81" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="89" count="2" type="stmt"/>
+        <line num="91" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="94" count="2" type="stmt"/>
+        <line num="104" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="112" count="2" type="stmt"/>
+        <line num="114" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="115" count="1" type="stmt"/>
+        <line num="117" count="2" type="stmt"/>
+        <line num="122" count="3" type="cond" truecount="0" falsecount="2"/>
+        <line num="124" count="3" type="stmt"/>
+        <line num="135" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="143" count="2" type="stmt"/>
+        <line num="145" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="146" count="0" type="stmt"/>
+        <line num="148" count="2" type="stmt"/>
+        <line num="164" count="3" type="stmt"/>
+        <line num="166" count="3" type="stmt"/>
+      </file>
+    </package>
     <package name="src.components.Button">
       <metrics statements="9" coveredstatements="9" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/Button/index.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="4" count="3" type="cond" truecount="2" falsecount="0"/>
-        <line num="5" count="7" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
+        <line num="4" count="7" type="cond" truecount="2" falsecount="0"/>
+        <line num="5" count="21" type="stmt"/>
+        <line num="12" count="7" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/Button/styles.js">
         <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="3"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
-        <line num="9" count="2" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="14" type="stmt"/>
+        <line num="9" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="19" count="7" type="stmt"/>
+        <line num="20" count="21" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.Footer">
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/Footer/index.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="8" count="2" type="stmt"/>
+      </file>
+      <file name="styles.js" path="/home/kaua/landing_page_project/src/components/Footer/styles.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.GoTop">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/GoTop/index.jsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+      </file>
+      <file name="styles.js" path="/home/kaua/landing_page_project/src/components/GoTop/styles.js">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="2" type="stmt"/>
+        <line num="4" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.GridImage">
+      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/GridImage/index.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="8" count="1" type="stmt"/>
         <line num="15" count="3" type="stmt"/>
-        <line num="17" count="3" type="stmt"/>
-        <line num="18" count="7" type="stmt"/>
+        <line num="24" count="12" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+      </file>
+      <file name="styles.js" path="/home/kaua/landing_page_project/src/components/GridImage/styles.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="12" type="stmt"/>
+        <line num="23" count="1" type="stmt"/>
+        <line num="24" count="3" type="stmt"/>
+        <line num="31" count="1" type="stmt"/>
+        <line num="32" count="3" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="46" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.GridText">
+      <metrics statements="12" coveredstatements="12" conditionals="6" coveredconditionals="6" methods="6" coveredmethods="6"/>
+      <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/GridText/index.jsx">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="15" count="9" type="stmt"/>
+        <line num="24" count="24" type="stmt"/>
+        <line num="40" count="2" type="stmt"/>
+      </file>
+      <file name="styles.js" path="/home/kaua/landing_page_project/src/components/GridText/styles.js">
+        <metrics statements="8" coveredstatements="8" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="6" count="24" type="stmt"/>
+        <line num="13" count="2" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="35" count="2" type="stmt"/>
+        <line num="36" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Heading">
       <metrics statements="11" coveredstatements="11" conditionals="8" coveredconditionals="8" methods="7" coveredmethods="7"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/Heading/index.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="11" count="25" type="stmt"/>
-        <line num="18" count="6" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="11" count="63" type="stmt"/>
+        <line num="18" count="9" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/Heading/styles.js">
         <metrics statements="8" coveredstatements="8" conditionals="4" coveredconditionals="4" methods="6" coveredmethods="6"/>
-        <line num="3" count="6" type="stmt"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="8" count="21" type="stmt"/>
+        <line num="3" count="9" type="stmt"/>
+        <line num="4" count="25" type="stmt"/>
+        <line num="8" count="35" type="stmt"/>
         <line num="12" count="1" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
-        <line num="22" count="6" type="stmt"/>
-        <line num="28" count="6" type="stmt"/>
-        <line num="29" count="25" type="stmt"/>
+        <line num="22" count="9" type="stmt"/>
+        <line num="28" count="9" type="stmt"/>
+        <line num="29" count="63" type="stmt"/>
       </file>
     </package>
     <package name="src.components.LogoLink">
       <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="2" coveredmethods="2"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/LogoLink/index.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+        <line num="6" count="10" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/LogoLink/styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="10" type="stmt"/>
       </file>
     </package>
     <package name="src.components.Menu">
-      <metrics statements="12" coveredstatements="12" conditionals="5" coveredconditionals="5" methods="6" coveredmethods="6"/>
+      <metrics statements="16" coveredstatements="16" conditionals="7" coveredconditionals="7" methods="6" coveredmethods="6"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/Menu/index.jsx">
-        <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
-        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="16" count="2" type="stmt"/>
-        <line num="45" count="1" type="stmt"/>
+        <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
+        <line num="10" count="2" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="12" count="6" type="stmt"/>
+        <line num="15" count="2" type="cond" truecount="2" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="28" count="6" type="stmt"/>
+        <line num="57" count="2" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/Menu/styles.js">
         <metrics statements="7" coveredstatements="7" conditionals="2" coveredconditionals="2" methods="4" coveredmethods="4"/>
-        <line num="5" count="1" type="stmt"/>
-        <line num="10" count="1" type="stmt"/>
-        <line num="11" count="5" type="stmt"/>
-        <line num="40" count="1" type="stmt"/>
-        <line num="41" count="5" type="stmt"/>
-        <line num="57" count="1" type="stmt"/>
-        <line num="58" count="5" type="stmt"/>
+        <line num="5" count="2" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="11" count="6" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="48" count="6" type="stmt"/>
+        <line num="64" count="2" type="stmt"/>
+        <line num="65" count="6" type="stmt"/>
       </file>
     </package>
     <package name="src.components.MenuLink">
       <metrics statements="5" coveredstatements="5" conditionals="3" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/MenuLink/index.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
-        <line num="4" count="3" type="cond" truecount="1" falsecount="0"/>
-        <line num="5" count="62" type="stmt"/>
-        <line num="12" count="3" type="stmt"/>
+        <line num="4" count="4" type="cond" truecount="1" falsecount="0"/>
+        <line num="5" count="72" type="stmt"/>
+        <line num="12" count="4" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/MenuLink/styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="3" type="stmt"/>
-        <line num="4" count="62" type="stmt"/>
+        <line num="3" count="4" type="stmt"/>
+        <line num="4" count="72" type="stmt"/>
       </file>
     </package>
     <package name="src.components.NavLink">
       <metrics statements="6" coveredstatements="6" conditionals="1" coveredconditionals="1" methods="3" coveredmethods="3"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/NavLink/index.jsx">
         <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="2" coveredmethods="2"/>
-        <line num="5" count="2" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="8" type="stmt"/>
-        <line num="9" count="60" type="stmt"/>
-        <line num="15" count="2" type="stmt"/>
+        <line num="5" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="9" type="stmt"/>
+        <line num="9" count="70" type="stmt"/>
+        <line num="15" count="3" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/NavLink/styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="2" type="stmt"/>
-        <line num="4" count="8" type="stmt"/>
+        <line num="3" count="3" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
       </file>
     </package>
     <package name="src.components.SectionBackground">
       <metrics statements="5" coveredstatements="5" conditionals="5" coveredconditionals="5" methods="2" coveredmethods="2"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/SectionBackground/index.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="5" count="4" type="cond" truecount="1" falsecount="0"/>
-        <line num="6" count="9" type="stmt"/>
-        <line num="13" count="4" type="stmt"/>
+        <line num="5" count="7" type="cond" truecount="1" falsecount="0"/>
+        <line num="6" count="22" type="stmt"/>
+        <line num="13" count="7" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/SectionBackground/styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="9" type="stmt"/>
+        <line num="3" count="7" type="stmt"/>
+        <line num="4" count="22" type="stmt"/>
       </file>
     </package>
     <package name="src.components.SectionBox">
       <metrics statements="6" coveredstatements="6" conditionals="4" coveredconditionals="4" methods="3" coveredmethods="3"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/SectionBox/index.jsx">
         <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
-        <line num="8" count="2" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="5" type="stmt"/>
-        <line num="14" count="10" type="stmt"/>
-        <line num="28" count="2" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="2" falsecount="0"/>
+        <line num="9" count="4" type="stmt"/>
+        <line num="14" count="9" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/SectionBox/styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="6" count="2" type="stmt"/>
-        <line num="7" count="5" type="stmt"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.components.SectionContainer">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/SectionContainer/index.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="6" type="stmt"/>
-        <line num="5" count="15" type="stmt"/>
-        <line num="8" count="6" type="stmt"/>
+        <line num="4" count="9" type="stmt"/>
+        <line num="5" count="29" type="stmt"/>
+        <line num="8" count="9" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/SectionContainer/styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="6" type="stmt"/>
-        <line num="4" count="15" type="stmt"/>
+        <line num="3" count="10" type="stmt"/>
+        <line num="4" count="29" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.SectionContent">
+      <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
+      <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/SectionContent/index.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="8" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+      </file>
+      <file name="styles.js" path="/home/kaua/landing_page_project/src/components/SectionContent/styles.js">
+        <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.components.SectionTwoColumns">
-      <metrics statements="9" coveredstatements="9" conditionals="3" coveredconditionals="3" methods="4" coveredmethods="4"/>
+      <metrics statements="9" coveredstatements="9" conditionals="5" coveredconditionals="5" methods="4" coveredmethods="4"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/SectionTwoColumns/index.jsx">
-        <metrics statements="3" coveredstatements="3" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
-        <line num="7" count="1" type="cond" truecount="1" falsecount="0"/>
-        <line num="8" count="2" type="stmt"/>
-        <line num="21" count="1" type="stmt"/>
+        <metrics statements="3" coveredstatements="3" conditionals="3" coveredconditionals="3" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/SectionTwoColumns/styles.js">
         <metrics statements="6" coveredstatements="6" conditionals="2" coveredconditionals="2" methods="3" coveredmethods="3"/>
-        <line num="4" count="1" type="stmt"/>
-        <line num="5" count="2" type="stmt"/>
-        <line num="13" count="1" type="stmt"/>
-        <line num="14" count="2" type="stmt"/>
-        <line num="23" count="1" type="stmt"/>
-        <line num="24" count="2" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="14" count="1" type="stmt"/>
+        <line num="15" count="2" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.components.TextComponent">
       <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/components/TextComponent/index.jsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="4" count="4" type="stmt"/>
-        <line num="5" count="14" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
+        <line num="4" count="6" type="stmt"/>
+        <line num="5" count="49" type="stmt"/>
+        <line num="8" count="6" type="stmt"/>
       </file>
       <file name="styles.js" path="/home/kaua/landing_page_project/src/components/TextComponent/styles.js">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="4" count="14" type="stmt"/>
+        <line num="3" count="6" type="stmt"/>
+        <line num="4" count="49" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.templates.Base">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="index.jsx" path="/home/kaua/landing_page_project/src/templates/Base/index.jsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="6" count="1" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+      </file>
+      <file name="styles.js" path="/home/kaua/landing_page_project/src/templates/Base/styles.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       </file>
     </package>
     <package name="src.templates.Home">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
       <file name="index.jsx" path="/home/kaua/landing_page_project/src/templates/Home/index.jsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-        <line num="3" count="1" type="stmt"/>
-        <line num="4" count="2" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
       </file>
     </package>
   </project>
