@@ -22,6 +22,8 @@ export const mapSections = (sections = []) => {
 };
 
 export const mapSectionTwoColumns = (section = {}) => {
+  let btn;
+
   const {
     __component: component = 'section.section-two-columns',
     title = '',
@@ -31,9 +33,11 @@ export const mapSectionTwoColumns = (section = {}) => {
         attributes: { url: srcImg = '', alternativeText: altText = '' } = '',
       } = '',
     } = '',
-    button = {},
     metadata: { section_id: sectionId = '', background = false } = '',
   } = section;
+
+  if (!section.button) btn = mapButton();
+  else btn = mapButton(section.button);
 
   return {
     component,
@@ -41,20 +45,24 @@ export const mapSectionTwoColumns = (section = {}) => {
     description,
     srcImg,
     altText,
-    button: mapButton(button),
+    button: btn,
     sectionId,
     background,
   };
 };
 
 export const mapSectionBox = (section = {}) => {
+  let btn;
+
   const {
     __component: component = 'section.section-box',
     title = '',
     paragraph: paragraphs = [],
-    button = {},
     metadata: { section_id: sectionId = '', background = false } = '',
   } = section;
+
+  if (!section.button) btn = mapButton();
+  else btn = mapButton(section.button);
 
   return {
     component,
@@ -64,39 +72,47 @@ export const mapSectionBox = (section = {}) => {
 
       return text;
     }),
-    button: mapButton(button),
+    button: btn,
     sectionId,
     background,
   };
 };
 
 export const mapSectionContent = (section = {}) => {
+  let btn;
+
   const {
     __component: component = 'section.section-content',
     title = '',
     content: [{ children: [{ text: html = '' } = ''] = '' } = ''] = '',
-    button = {},
     metadata: { section_id: sectionId = '', background = false } = '',
   } = section;
+
+  if (!section.button) btn = mapButton();
+  else btn = mapButton(section.button);
 
   return {
     component,
     title,
     html,
-    button: mapButton(button),
+    button: btn,
     sectionId,
     background,
   };
 };
 
 export const mapSectionGridText = (section = {}) => {
+  let btn;
+
   const {
     title = '',
     description = '',
     text_grid: gridText = [],
-    button = {},
     metadata: { section_id: sectionId = '', background = false } = '',
   } = section;
+
+  if (!section.button) btn = mapButton();
+  else btn = mapButton(section.button);
 
   return {
     component: 'section.section-grid-text',
@@ -110,20 +126,24 @@ export const mapSectionGridText = (section = {}) => {
         description,
       };
     }),
-    button: mapButton(button),
+    button: btn,
     sectionId,
     background,
   };
 };
 
 export const mapSectionGridImage = (section = {}) => {
+  let btn;
+
   const {
     title = '',
     description = '',
     image_grid: gridImage = [],
-    button = {},
     metadata: { section_id: sectionId = '', background = false } = '',
   } = section;
+
+  if (!section.button) btn = mapButton();
+  else btn = mapButton(section.button);
 
   return {
     component: 'section.section-grid-image',
@@ -131,11 +151,16 @@ export const mapSectionGridImage = (section = {}) => {
     description,
     gridImage: gridImage.map((grid) => {
       const {
-        data: [
-          {
-            attributes: { alternativeText: altText, url: srcImg = '' } = '',
-          } = '',
-        ] = '',
+        images: {
+          data: [
+            {
+              attributes: {
+                alternativeText: altText = '',
+                url: srcImg = '',
+              } = '',
+            } = '',
+          ] = '',
+        } = '',
       } = grid;
 
       return {
@@ -143,7 +168,7 @@ export const mapSectionGridImage = (section = {}) => {
         srcImg,
       };
     }),
-    button: mapButton(button),
+    button: btn,
     sectionId,
     background,
   };

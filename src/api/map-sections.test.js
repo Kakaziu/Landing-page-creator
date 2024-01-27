@@ -1,10 +1,12 @@
 import {
   mapSectionBox,
   mapSectionContent,
+  mapSectionGridImage,
   mapSectionGridText,
   mapSectionTwoColumns,
 } from './map-sections';
 import {
+  gridImageMock,
   gridTextMock,
   sectionBoxMock,
   sectionContentMock,
@@ -97,6 +99,7 @@ describe('map-sections', () => {
     expect(sectionData.sectionId).toBe('');
     expect(sectionData.title).toBe('');
     expect(sectionData.description).toBe('');
+    expect(sectionData.gridText).toEqual([]);
     expect(sectionData.button).toEqual({
       textButton: '',
       urlButton: '',
@@ -116,5 +119,32 @@ describe('map-sections', () => {
     expect(sectionData.gridText[0].description).toBe(
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.',
     );
+  });
+
+  it('should return a predefined object when section grid image no have data', () => {
+    const sectionData = mapSectionGridImage();
+    expect(sectionData.background).toBe(false);
+    expect(sectionData.component).toBe('section.section-grid-image');
+    expect(sectionData.sectionId).toBe('');
+    expect(sectionData.title).toBe('');
+    expect(sectionData.description).toBe('');
+    expect(sectionData.gridImage).toEqual([]);
+    expect(sectionData.button).toEqual({
+      textButton: '',
+      urlButton: '',
+      size: '',
+    });
+  });
+
+  it('should map gridImage', () => {
+    const sectionData = mapSectionGridImage(gridImageMock);
+    expect(sectionData.background).toBe(false);
+    expect(sectionData.component).toBe('section.section-grid-image');
+    expect(sectionData.sectionId).toBe('grid-image');
+    expect(sectionData.title).toBe('grid 2');
+    expect(sectionData.description).toBe('grid 2 image');
+    expect(sectionData.button.textButton).toBe('');
+    expect(sectionData.gridImage[0].altText).toBe('image');
+    expect(sectionData.gridImage[0].srcImg).toBe('c.svg');
   });
 });

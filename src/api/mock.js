@@ -423,7 +423,7 @@ export const gridTextMock = {
 export const gridImageMock = {
   id: 3,
   __component: 'section.section-grid',
-  title: 'grid  2',
+  title: 'grid 2',
   description: 'grid 2 image',
   button: null,
   metadata: {
@@ -441,8 +441,8 @@ export const gridImageMock = {
           {
             id: 1,
             attributes: {
-              alternativeText: null,
-              url: 'https://res.cloudinary.com/drplqaxi0/image/upload/v1704251425/pexels_angel_rondon_19483671_99d3895603.jpg',
+              alternativeText: 'image',
+              url: 'c.svg',
             },
           },
         ],
