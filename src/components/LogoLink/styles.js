@@ -9,7 +9,8 @@ export const Container = styled.a`
     align-items: center;
 
     > img {
-      width: 20rem
+      max-width: 15rem;
+      max-height: 8rem;
     }
   `}
 `;
