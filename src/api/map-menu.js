@@ -22,12 +22,6 @@ export const mapMenuLinks = (links = []) => {
   return links.map((link) => {
     const { text = '', url = '', open_in_new_tab: newTab = false } = link;
 
-    console.log({
-      text,
-      url,
-      newTab,
-    });
-
     return {
       text,
       url,

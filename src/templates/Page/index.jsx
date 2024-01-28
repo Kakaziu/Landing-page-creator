@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { mapData } from '../../api/map-data';
+import Base from '../Base';
 
 const Page = () => {
   const [page, setPage] = useState(null);
@@ -16,7 +17,7 @@ const Page = () => {
         const json = await data.json();
 
         const mapPage = mapData(json.data);
-        setPage(mapPage);
+        setPage(mapPage[0]);
       } catch (e) {
         console.log(e);
         setPage(undefined);
@@ -26,7 +27,9 @@ const Page = () => {
     loadData();
   }, []);
 
-  return <button onClick={() => console.log(page)}>clique</button>;
+  if (!page) return <h1>Carregando...</h1>;
+
+  return <h1>Carregado {console.log(page)}</h1>;
 };
 
 export default Page;
