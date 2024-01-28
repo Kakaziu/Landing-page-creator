@@ -19,12 +19,16 @@ export const mapMenu = (menu = {}) => {
 };
 
 export const mapMenuLinks = (links = []) => {
-  return links.map((link) => {
-    const { text = '', url = '', open_in_new_tab: newTab = false } = link;
+  return links.map((linkObj) => {
+    const {
+      text: children = '',
+      url: link = '',
+      open_in_new_tab: newTab = false,
+    } = linkObj;
 
     return {
-      text,
-      url,
+      children,
+      link,
       newTab,
     };
   });

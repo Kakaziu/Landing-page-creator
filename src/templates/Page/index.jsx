@@ -29,7 +29,19 @@ const Page = () => {
 
   if (!page) return <h1>Carregando...</h1>;
 
-  return <h1>Carregado {console.log(page)}</h1>;
+  const { menu, footerHtml } = page;
+
+  console.log(page);
+
+  return (
+    <Base
+      links={menu.links}
+      logoData={{ text: menu.logoTitle, link: menu.link, srcImg: menu.srcImg }}
+      footerHtml={footerHtml}
+    >
+      <h1>Carregado</h1>
+    </Base>
+  );
 };
 
 export default Page;
