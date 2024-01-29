@@ -5,6 +5,7 @@ import { LinkContainer as Button } from '../Button/styles';
 
 export const TextContainer = styled.div`
   ${({ theme }) => css`
+
     width: 50%;
 
     @media ${theme.media.lteMedium} {
@@ -19,7 +20,6 @@ export const ImageContainer = styled.div`
   ${({ theme }) => css`
     display: flex;
     justify-content: center;
-    width: 50%;
 
     @media ${theme.media.lteMedium} {
       width: 100%;
@@ -39,7 +39,7 @@ export const Container = styled.div`
   ${({ theme, background }) => css`
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 8rem;
     gap: ${theme.spacings.medium};
 
