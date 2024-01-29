@@ -4,6 +4,7 @@ import Base from '../Base';
 import Loading from '../../components/Loading';
 import PageNotFound from '../PageNotFound';
 import SectionTwoColumns from '../../components/SectionTwoColumns';
+import SectionBox from '../../components/SectionBox';
 
 const Page = () => {
   const [page, setPage] = useState(null);
@@ -51,6 +52,11 @@ const Page = () => {
 
         if (component === 'section.section-two-columns') {
           return <SectionTwoColumns {...section} key={key} />;
+        }
+
+        if (component === 'section.section-box') {
+          console.log(section);
+          return <SectionBox {...section} key={key} />;
         }
       })}
     </Base>

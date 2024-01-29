@@ -11,7 +11,7 @@ const SectionBox = ({ background, title, paragraphs = [], button = null }) => {
       <Styled.Container>
         <Heading isdark={!background}>{title}</Heading>
         {paragraphs.map((paragraph, index) => (
-          <TextComponent key={index}>{paragraph.text}</TextComponent>
+          <TextComponent key={index}>{paragraph}</TextComponent>
         ))}
         {button.children && (
           <Button url={button.urlButton} size={button.size}>
@@ -26,11 +26,7 @@ const SectionBox = ({ background, title, paragraphs = [], button = null }) => {
 SectionBox.propTypes = {
   background: P.bool,
   title: P.string.isRequired,
-  paragraphs: P.arrayOf(
-    P.shape({
-      text: P.string.isRequired,
-    }),
-  ),
+  paragraphs: P.arrayOf(P.string.isRequired),
   button:
     P.shape({
       text: P.string.isRequired,
