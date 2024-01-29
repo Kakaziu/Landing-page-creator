@@ -26,6 +26,7 @@ export const Button = styled.button`
     ${size === 'big' ? buttonSizes.big(theme) : buttonSizes.small(theme)}
     cursor: pointer;
     transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
   `}
 
   &:hover {
