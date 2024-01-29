@@ -3,6 +3,7 @@ import { mapData } from '../../api/map-data';
 import Base from '../Base';
 import Loading from '../../components/Loading';
 import PageNotFound from '../PageNotFound';
+import SectionTwoColumns from '../../components/SectionTwoColumns';
 
 const Page = () => {
   const [page, setPage] = useState(null);
@@ -18,8 +19,6 @@ const Page = () => {
         );
         const json = await data.json();
         const { data: pageData } = json;
-
-        console.log(pageData);
 
         if (pageData.length === 0) return setPage('not found');
 
@@ -38,7 +37,7 @@ const Page = () => {
 
   if (page === 'not found') return <PageNotFound />;
 
-  const { menu, footerHtml } = page;
+  const { menu, footerHtml, sections, slug } = page;
 
   return (
     <Base
@@ -46,7 +45,14 @@ const Page = () => {
       logoData={{ text: menu.logoTitle, link: menu.link, srcImg: menu.srcImg }}
       footerHtml={footerHtml}
     >
-      <h1>Carregado</h1>
+      {sections.map((section, index) => {
+        const { component } = section;
+        const key = `${slug}-${index}`;
+
+        if (component === 'section.section-two-columns') {
+          return <SectionTwoColumns {...section} key={key} />;
+        }
+      })}
     </Base>
   );
 };

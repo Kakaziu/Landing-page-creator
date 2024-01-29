@@ -1,12 +1,8 @@
 export const mapButton = (button = {}) => {
-  const {
-    text_button: textButton = '',
-    url: urlButton = '',
-    size = '',
-  } = button;
+  const { text_button: children = '', url: urlButton = '', size = '' } = button;
 
   return {
-    textButton,
+    children,
     urlButton,
     size,
   };

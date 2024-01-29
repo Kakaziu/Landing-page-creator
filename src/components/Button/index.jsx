@@ -1,9 +1,9 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 
-const Button = ({ children, size = 'small', url = '#' }) => {
+const Button = ({ children, size = 'small', urlButton = '#' }) => {
   return (
-    <Styled.LinkContainer href={url}>
+    <Styled.LinkContainer href={urlButton}>
       <Styled.Button size={size}>{children}</Styled.Button>
     </Styled.LinkContainer>
   );
@@ -12,7 +12,7 @@ const Button = ({ children, size = 'small', url = '#' }) => {
 Button.propTypes = {
   children: P.node.isRequired,
   size: P.oneOf(['small', 'big']),
-  url: P.string,
+  urlButton: P.string,
 };
 
 export default Button;

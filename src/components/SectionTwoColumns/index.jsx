@@ -7,7 +7,7 @@ import Button from '../Button';
 
 const SectionTwoColumns = ({
   title,
-  text,
+  description,
   srcImg,
   background = false,
   button,
@@ -17,10 +17,10 @@ const SectionTwoColumns = ({
       <Styled.Container background={+background}>
         <Styled.TextContainer>
           <Heading uppercase>{title}</Heading>
-          <TextComponent>{text}</TextComponent>
+          <TextComponent>{description}</TextComponent>
           {button && (
             <Button url={button.urlButton} size={button.size}>
-              {button.textButton}
+              {button.children}
             </Button>
           )}
         </Styled.TextContainer>
@@ -32,7 +32,7 @@ const SectionTwoColumns = ({
 
 SectionTwoColumns.propTypes = {
   title: P.string.isRequired,
-  text: P.string.isRequired,
+  description: P.string.isRequired,
   srcImg: P.string.isRequired,
   background: P.bool,
   button: Button.propTypes,

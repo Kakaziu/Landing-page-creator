@@ -23,7 +23,7 @@ export const Button = styled.button`
     background-color: ${theme.colors.secondaryColor};
     color: ${theme.colors.white};
     border-radius: 4px;
-    ${buttonSizes[size](theme)}
+    ${size === 'big' ? buttonSizes.big(theme) : buttonSizes.small(theme)}
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   `}
