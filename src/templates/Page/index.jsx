@@ -6,6 +6,7 @@ import PageNotFound from '../PageNotFound';
 import SectionTwoColumns from '../../components/SectionTwoColumns';
 import SectionBox from '../../components/SectionBox';
 import SectionContent from '../../components/SectionContent';
+import GridText from '../../components/GridText';
 
 const Page = () => {
   const [page, setPage] = useState(null);
@@ -60,8 +61,12 @@ const Page = () => {
         }
 
         if (component === 'section.section-content') {
-          console.log(section);
           return <SectionContent {...section} key={key} />;
+        }
+
+        if (component === 'section.section-grid-text') {
+          console.log(section);
+          return <GridText {...section} key={key} />;
         }
       })}
     </Base>

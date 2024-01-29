@@ -8,7 +8,7 @@ import TextComponent from '../TextComponent';
 const GridText = ({
   title,
   description,
-  grid = [],
+  gridText = [],
   background = false,
   button,
 }) => {
@@ -20,7 +20,7 @@ const GridText = ({
           <TextComponent>{description}</TextComponent>
         </Styled.TitleContainer>
         <Styled.GridContainer>
-          {grid.map((element) => (
+          {gridText.map((element) => (
             <Styled.GridElement key={element.title}>
               <Heading size="small">{element.title}</Heading>
               <TextComponent>{element.description}</TextComponent>
@@ -40,7 +40,7 @@ const GridText = ({
 GridText.propTypes = {
   title: P.string.isRequired,
   description: P.string.isRequired,
-  grid: P.arrayOf(
+  gridText: P.arrayOf(
     P.shape({
       title: P.string.isRequired,
       description: P.string.isRequired,
