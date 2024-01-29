@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { mapData } from '../../api/map-data';
 import Base from '../Base';
+import Loading from '../../components/Loading';
 
 const Page = () => {
   const [page, setPage] = useState(null);
@@ -27,11 +28,9 @@ const Page = () => {
     loadData();
   }, []);
 
-  if (!page) return <h1>Carregando...</h1>;
+  if (!page) return <Loading />;
 
   const { menu, footerHtml } = page;
-
-  console.log(page);
 
   return (
     <Base
