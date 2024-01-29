@@ -7,6 +7,7 @@ import SectionTwoColumns from '../../components/SectionTwoColumns';
 import SectionBox from '../../components/SectionBox';
 import SectionContent from '../../components/SectionContent';
 import GridText from '../../components/GridText';
+import GridImage from '../../components/GridImage';
 
 const Page = () => {
   const [page, setPage] = useState(null);
@@ -65,8 +66,12 @@ const Page = () => {
         }
 
         if (component === 'section.section-grid-text') {
-          console.log(section);
           return <GridText {...section} key={key} />;
+        }
+
+        if (component === 'section.section-grid-image') {
+          console.log(section);
+          return <GridImage {...section} key={key} />;
         }
       })}
     </Base>

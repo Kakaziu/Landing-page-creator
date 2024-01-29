@@ -8,7 +8,7 @@ import TextComponent from '../TextComponent';
 const GridImage = ({
   title,
   description,
-  grid = [],
+  gridImage = [],
   background = false,
   button,
 }) => {
@@ -20,7 +20,7 @@ const GridImage = ({
           <TextComponent>{description}</TextComponent>
         </Styled.TitleContainer>
         <Styled.GridContainer>
-          {grid.map((element) => (
+          {gridImage.map((element) => (
             <Styled.GridElement key={element.altText}>
               <img src={element.srcImg} alt={element.altText} />
             </Styled.GridElement>
@@ -39,7 +39,7 @@ const GridImage = ({
 GridImage.propTypes = {
   title: P.string.isRequired,
   description: P.string.isRequired,
-  grid: P.arrayOf(
+  gridImage: P.arrayOf(
     P.shape({
       srcImg: P.string.isRequired,
       altText: P.string.isRequired,
