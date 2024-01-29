@@ -24,6 +24,8 @@ export const HtmlContainer = styled.div`
 
 export const Container = styled.div`
   ${({ theme, background }) => css`
+  margin-top: 8rem;
+
   ${HeadingContainer} {
       margin-bottom: ${theme.spacings.small};
       color: ${

@@ -50,7 +50,6 @@ const Page = () => {
         const key = `${slug}-${index}`;
 
         if (component === 'section.section-two-columns') {
-          console.log(section);
           return <SectionTwoColumns {...section} key={key} />;
         }
       })}
