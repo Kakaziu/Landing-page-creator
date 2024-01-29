@@ -24,7 +24,9 @@ const SectionTwoColumns = ({
             </Button>
           )}
         </Styled.TextContainer>
-        <Styled.Image src={srcImg} alt={title} />
+        <Styled.ImageContainer>
+          <Styled.Image src={srcImg} alt={title} />
+        </Styled.ImageContainer>
       </Styled.Container>
     </SectionBackground>
   );
