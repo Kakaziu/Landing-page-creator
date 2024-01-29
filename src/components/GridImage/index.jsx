@@ -28,7 +28,7 @@ const GridImage = ({
         </Styled.GridContainer>
         {button.children && (
           <Button url={button.urlButton} size={button.size}>
-            {button.textButton}
+            {button.children}
           </Button>
         )}
       </Styled.Container>

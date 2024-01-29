@@ -12,9 +12,9 @@ const SectionContent = ({ title, html, background = false, button }) => {
           <Heading uppercase>{title}</Heading>
         </Styled.TitleContainer>
         <Styled.HtmlContainer dangerouslySetInnerHTML={{ __html: html }} />
-        {button && (
+        {button.children && (
           <Button url={button.urlButton} size={button.size}>
-            {button.textButton}
+            {button.children}
           </Button>
         )}
       </Styled.Container>

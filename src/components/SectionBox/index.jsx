@@ -9,13 +9,15 @@ const SectionBox = ({ background, title, paragraphs = [], button = null }) => {
   return (
     <SectionBackground background={background}>
       <Styled.Container>
-        <Heading isdark={!background}>{title}</Heading>
+        <Heading isdark={!background} uppercase>
+          {title}
+        </Heading>
         {paragraphs.map((paragraph, index) => (
           <TextComponent key={index}>{paragraph}</TextComponent>
         ))}
         {button.children && (
           <Button url={button.urlButton} size={button.size}>
-            {button.textButton}
+            {button.children}
           </Button>
         )}
       </Styled.Container>
