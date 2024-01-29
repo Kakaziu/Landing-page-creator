@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { mapData } from '../../api/map-data';
 import Base from '../Base';
 import Loading from '../../components/Loading';
+import PageNotFound from '../PageNotFound';
 
 const Page = () => {
   const [page, setPage] = useState(null);
@@ -16,8 +17,13 @@ const Page = () => {
           `http://localhost:1337/api/pages/?filters[slug]=${slug}&populate=deep`,
         );
         const json = await data.json();
+        const { data: pageData } = json;
 
-        const mapPage = mapData(json.data);
+        console.log(pageData);
+
+        if (pageData.length === 0) return setPage('not found');
+
+        const mapPage = mapData(pageData);
         setPage(mapPage[0]);
       } catch (e) {
         console.log(e);
@@ -29,6 +35,8 @@ const Page = () => {
   }, []);
 
   if (!page) return <Loading />;
+
+  if (page === 'not found') return <PageNotFound />;
 
   const { menu, footerHtml } = page;
 
