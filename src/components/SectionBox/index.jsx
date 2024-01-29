@@ -13,7 +13,7 @@ const SectionBox = ({ background, title, paragraphs = [], button = null }) => {
         {paragraphs.map((paragraph, index) => (
           <TextComponent key={index}>{paragraph.text}</TextComponent>
         ))}
-        {button && (
+        {button.children && (
           <Button url={button.urlButton} size={button.size}>
             {button.textButton}
           </Button>
