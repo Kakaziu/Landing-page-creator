@@ -70,7 +70,6 @@ const Page = () => {
         }
 
         if (component === 'section.section-grid-image') {
-          console.log(section);
           return <GridImage {...section} key={key} />;
         }
       })}

@@ -29,9 +29,12 @@ export const ImageContainer = styled.div`
 `;
 
 export const Image = styled.img`
-    ${() => css`
-    max-width: 700px;
-    max-height: 500px;
+    ${({ theme }) => css`
+    max-width: 550px;
+
+    @media ${theme.media.lteMedium} {
+      width: 100%;
+    }
   `}
 `;
 
