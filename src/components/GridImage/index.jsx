@@ -10,11 +10,12 @@ const GridImage = ({
   description,
   gridImage = [],
   background = false,
+  sectionId = '',
   button,
 }) => {
   return (
     <SectionBackground background={background}>
-      <Styled.Container background={+background}>
+      <Styled.Container background={+background} id={sectionId}>
         <Styled.TitleContainer>
           <Heading uppercase>{title}</Heading>
           <TextComponent>{description}</TextComponent>
@@ -45,6 +46,7 @@ GridImage.propTypes = {
       altText: P.string.isRequired,
     }),
   ),
+  sectionId: P.string,
   background: P.bool,
   button: Button.propTypes,
 };

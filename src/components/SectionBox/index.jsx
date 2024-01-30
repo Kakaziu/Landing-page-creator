@@ -5,10 +5,16 @@ import Heading from '../Heading/index';
 import TextComponent from '../TextComponent/index';
 import Button from '../Button/index';
 
-const SectionBox = ({ background, title, paragraphs = [], button = null }) => {
+const SectionBox = ({
+  background,
+  title,
+  paragraphs = [],
+  sectionId = '',
+  button = null,
+}) => {
   return (
     <SectionBackground background={background}>
-      <Styled.Container>
+      <Styled.Container id={sectionId}>
         <Heading isdark={!background} uppercase>
           {title}
         </Heading>
@@ -29,6 +35,7 @@ SectionBox.propTypes = {
   background: P.bool,
   title: P.string.isRequired,
   paragraphs: P.arrayOf(P.string.isRequired),
+  sectionId: P.string,
   button:
     P.shape({
       text: P.string.isRequired,

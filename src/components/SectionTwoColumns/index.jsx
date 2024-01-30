@@ -10,11 +10,12 @@ const SectionTwoColumns = ({
   description,
   srcImg,
   background = false,
+  sectionId = '',
   button,
 }) => {
   return (
     <SectionBackground background={background}>
-      <Styled.Container background={+background}>
+      <Styled.Container background={+background} id={sectionId}>
         <Styled.TextContainer>
           <Heading uppercase>{title}</Heading>
           <TextComponent>{description}</TextComponent>
@@ -37,6 +38,7 @@ SectionTwoColumns.propTypes = {
   description: P.string.isRequired,
   srcImg: P.string.isRequired,
   background: P.bool,
+  sectionId: P.string,
   button: Button.propTypes,
 };
 
