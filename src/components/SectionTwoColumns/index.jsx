@@ -39,7 +39,7 @@ SectionTwoColumns.propTypes = {
   srcImg: P.string.isRequired,
   background: P.bool,
   sectionId: P.string,
-  button: Button.propTypes,
+  ...Button.propTypes,
 };
 
 export default SectionTwoColumns;

@@ -36,12 +36,7 @@ SectionBox.propTypes = {
   title: P.string.isRequired,
   paragraphs: P.arrayOf(P.string.isRequired),
   sectionId: P.string,
-  button:
-    P.shape({
-      text: P.string.isRequired,
-      url: P.string.isRequired,
-      size: P.oneOf(['small', 'big']),
-    }) | null,
+  ...Button.propTypes,
 };
 
 export default SectionBox;

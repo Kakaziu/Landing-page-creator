@@ -49,7 +49,7 @@ GridText.propTypes = {
   ),
   sectionId: P.string,
   background: P.bool,
-  button: Button.propTypes,
+  ...Button.propTypes,
 };
 
 export default GridText;
