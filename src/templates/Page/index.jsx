@@ -54,23 +54,43 @@ const Page = () => {
         const key = `${slug}-${index}`;
 
         if (component === 'section.section-two-columns') {
-          return <SectionTwoColumns {...section} key={key} />;
+          return (
+            <SectionTwoColumns {...section} key={key}>
+              <></>
+            </SectionTwoColumns>
+          );
         }
 
         if (component === 'section.section-box') {
-          return <SectionBox {...section} key={key} />;
+          return (
+            <SectionBox {...section} key={key}>
+              <></>
+            </SectionBox>
+          );
         }
 
         if (component === 'section.section-content') {
-          return <SectionContent {...section} key={key} />;
+          return (
+            <SectionContent {...section} key={key}>
+              <></>
+            </SectionContent>
+          );
         }
 
         if (component === 'section.section-grid-text') {
-          return <GridText {...section} key={key} />;
+          return (
+            <GridText {...section} key={key}>
+              <></>
+            </GridText>
+          );
         }
 
         if (component === 'section.section-grid-image') {
-          return <GridImage {...section} key={key} />;
+          return (
+            <GridImage {...section} key={key}>
+              <></>
+            </GridImage>
+          );
         }
       })}
     </Base>
