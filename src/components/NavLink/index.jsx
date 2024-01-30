@@ -5,8 +5,8 @@ import MenuLink from '../MenuLink';
 const NavLink = ({ links = [] }) => {
   return (
     <Styled.Container>
-      {links.map((link) => (
-        <MenuLink {...link} key={link.children} />
+      {links.map((link, index) => (
+        <MenuLink {...link} key={index} />
       ))}
     </Styled.Container>
   );

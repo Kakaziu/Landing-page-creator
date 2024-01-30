@@ -21,8 +21,8 @@ const GridImage = ({
           <TextComponent>{description}</TextComponent>
         </Styled.TitleContainer>
         <Styled.GridContainer>
-          {gridImage.map((element) => (
-            <Styled.GridElement key={element.altText}>
+          {gridImage.map((element, index) => (
+            <Styled.GridElement key={index}>
               <img src={element.srcImg} alt={element.altText} />
             </Styled.GridElement>
           ))}

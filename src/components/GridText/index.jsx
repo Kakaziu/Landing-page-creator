@@ -21,8 +21,8 @@ const GridText = ({
           <TextComponent>{description}</TextComponent>
         </Styled.TitleContainer>
         <Styled.GridContainer>
-          {gridText.map((element) => (
-            <Styled.GridElement key={element.title}>
+          {gridText.map((element, index) => (
+            <Styled.GridElement key={index}>
               <Heading size="small">{element.title}</Heading>
               <TextComponent>{element.description}</TextComponent>
             </Styled.GridElement>
