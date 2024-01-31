@@ -10,7 +10,8 @@ exports[`<Menu/> should not render links 1`] = `
 }
 
 .c7 >img {
-  width: 20rem;
+  max-width: 15rem;
+  max-height: 8rem;
 }
 
 .c5 {
@@ -192,7 +193,8 @@ exports[`<Menu/> should render logo and nav 1`] = `
 }
 
 .c7 >img {
-  width: 20rem;
+  max-width: 15rem;
+  max-height: 8rem;
 }
 
 .c5 {

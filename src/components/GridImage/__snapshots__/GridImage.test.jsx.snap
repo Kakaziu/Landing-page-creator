@@ -22,26 +22,6 @@ exports[`<GridImage/> should render with background 1`] = `
   font-size: 3.2rem;
 }
 
-.c10 {
-  display: block;
-}
-
-.c11 {
-  font-weight: bold;
-  border: none;
-  background-color: #dc143c;
-  color: #FFFFFF;
-  border-radius: 4px;
-  padding: 8px 40px;
-  font-size: 2.4rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.c11:hover {
-  background-color: #b81132;
-}
-
 .c8 .c4 {
   margin-bottom: 1.6rem;
 }
@@ -68,14 +48,13 @@ exports[`<GridImage/> should render with background 1`] = `
   width: 100%;
 }
 
+.c2 {
+  margin-top: 8rem;
+}
+
 .c2 .c4 {
   margin-bottom: 1.6rem;
   color: #FFFFFF;
-}
-
-.c2 .c9 {
-  margin-top: 3.2rem;
-  text-align: center;
 }
 
 .c6 {
@@ -99,6 +78,7 @@ exports[`<GridImage/> should render with background 1`] = `
       <div
         background="1"
         class="c2"
+        id=""
       >
         <div
           class="c3"
@@ -168,16 +148,6 @@ exports[`<GridImage/> should render with background 1`] = `
             />
           </div>
         </div>
-        <a
-          class="c9 c10"
-          href="#"
-        >
-          <button
-            class="c11"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>

@@ -10,7 +10,8 @@ exports[`render <Home /> should render home 1`] = `
 }
 
 .c8 >img {
-  width: 20rem;
+  max-width: 15rem;
+  max-height: 8rem;
 }
 
 .c6 {
@@ -101,7 +102,7 @@ exports[`render <Home /> should render home 1`] = `
   padding-bottom: 0;
 }
 
-.c23 {
+.c20 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -110,17 +111,17 @@ exports[`render <Home /> should render home 1`] = `
   padding: 1.6rem;
 }
 
-.c23 a {
+.c20 a {
   color: #0A1128;
   text-decoration: none;
   font-size: 1.6rem;
 }
 
-.c23 .c2 {
+.c20 .c2 {
   padding: 1.6rem 0;
 }
 
-.c24 {
+.c21 {
   position: fixed;
   bottom: 4rem;
   right: 4rem;
@@ -136,7 +137,7 @@ exports[`render <Home /> should render home 1`] = `
   cursor: pointer;
 }
 
-.c24:hover {
+.c21:hover {
   background-color: #0A1128;
 }
 
@@ -148,32 +149,12 @@ exports[`render <Home /> should render home 1`] = `
   align-items: center;
 }
 
-.c21 {
+.c18 {
   background-color: #FFFFFF;
   color: #0A1128;
   min-height: 100vh;
   display: flex;
   align-items: center;
-}
-
-.c19 {
-  display: block;
-}
-
-.c20 {
-  font-weight: bold;
-  border: none;
-  background-color: #dc143c;
-  color: #FFFFFF;
-  border-radius: 4px;
-  padding: 8px 20px;
-  font-size: 1.6rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.c20:hover {
-  background-color: #b81132;
 }
 
 .c16 .c5 {
@@ -192,22 +173,22 @@ exports[`render <Home /> should render home 1`] = `
   width: 100%;
 }
 
+.c12 {
+  margin-top: 8rem;
+}
+
 .c12 .c5 {
   margin-bottom: 1.6rem;
   color: #FFFFFF;
 }
 
-.c12 .c18 {
-  margin-top: 2.4rem;
+.c19 {
+  margin-top: 8rem;
 }
 
-.c22 .c5 {
+.c19 .c5 {
   margin-bottom: 1.6rem;
   color: #0A1128;
-}
-
-.c22 .c18 {
-  margin-top: 2.4rem;
 }
 
 .c14 {
@@ -410,6 +391,7 @@ exports[`render <Home /> should render home 1`] = `
       <div
         background="1"
         class="c12"
+        id=""
       >
         <div
           class="c13"
@@ -479,29 +461,20 @@ exports[`render <Home /> should render home 1`] = `
             </p>
           </div>
         </div>
-        <a
-          class="c18 c19"
-          href="#"
-        >
-          <button
-            class="c20"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>
   <div
     background="0"
-    class="c21"
+    class="c18"
   >
     <div
       class="c2 c3"
     >
       <div
         background="0"
-        class="c22"
+        class="c19"
+        id=""
       >
         <div
           class="c13"
@@ -571,16 +544,6 @@ exports[`render <Home /> should render home 1`] = `
             </p>
           </div>
         </div>
-        <a
-          class="c18 c19"
-          href="#"
-        >
-          <button
-            class="c20"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>
@@ -594,6 +557,7 @@ exports[`render <Home /> should render home 1`] = `
       <div
         background="1"
         class="c12"
+        id=""
       >
         <div
           class="c13"
@@ -663,29 +627,20 @@ exports[`render <Home /> should render home 1`] = `
             </p>
           </div>
         </div>
-        <a
-          class="c18 c19"
-          href="#"
-        >
-          <button
-            class="c20"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>
   <div
     background="0"
-    class="c21"
+    class="c18"
   >
     <div
       class="c2 c3"
     >
       <div
         background="0"
-        class="c22"
+        class="c19"
+        id=""
       >
         <div
           class="c13"
@@ -755,16 +710,6 @@ exports[`render <Home /> should render home 1`] = `
             </p>
           </div>
         </div>
-        <a
-          class="c18 c19"
-          href="#"
-        >
-          <button
-            class="c20"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>
@@ -778,6 +723,7 @@ exports[`render <Home /> should render home 1`] = `
       <div
         background="1"
         class="c12"
+        id=""
       >
         <div
           class="c13"
@@ -847,29 +793,20 @@ exports[`render <Home /> should render home 1`] = `
             </p>
           </div>
         </div>
-        <a
-          class="c18 c19"
-          href="#"
-        >
-          <button
-            class="c20"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>
   <div
     background="0"
-    class="c21"
+    class="c18"
   >
     <div
       class="c2 c3"
     >
       <div
         background="0"
-        class="c22"
+        class="c19"
+        id=""
       >
         <div
           class="c13"
@@ -939,21 +876,11 @@ exports[`render <Home /> should render home 1`] = `
             </p>
           </div>
         </div>
-        <a
-          class="c18 c19"
-          href="#"
-        >
-          <button
-            class="c20"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>
   <footer
-    class="c23"
+    class="c20"
   >
     <p>
       Teste de footer
@@ -961,7 +888,7 @@ exports[`render <Home /> should render home 1`] = `
   </footer>
   <a
     aria-label="Go to top"
-    class="c24"
+    class="c21"
     href="#"
     title="Go to top"
   >

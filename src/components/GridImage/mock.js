@@ -3,7 +3,7 @@ export default {
   title: 'My grid',
   description:
     'Atque doloribus nobis laudantium esse ut, non commodi maxime distinctio veritatis unde',
-  grid: [
+  gridImage: [
     {
       altText: 'Teste 1',
       srcImg: 'https://source.unsplash.com/random/800x800?r=1',

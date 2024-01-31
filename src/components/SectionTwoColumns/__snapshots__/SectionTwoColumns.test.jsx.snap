@@ -7,43 +7,30 @@ exports[`<SectionTwoColumns/> should render gridTwoColumns 1`] = `
   font-size: 3.2rem;
 }
 
+.c3 {
+  width: 50%;
+}
+
+.c7 {
+  display: flex;
+  justify-content: center;
+}
+
 .c8 {
-  display: block;
-}
-
-.c9 {
-  font-weight: bold;
-  border: none;
-  background-color: #dc143c;
-  color: #FFFFFF;
-  border-radius: 4px;
-  padding: 8px 40px;
-  font-size: 2.4rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.c9:hover {
-  background-color: #b81132;
-}
-
-.c10 {
-  max-width: 700px;
+  max-width: 550px;
 }
 
 .c2 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 8rem;
+  gap: 2.4rem;
 }
 
 .c2 .c4 {
   margin-bottom: 2.4rem;
   color: #0A1128;
-}
-
-.c2 .c7 {
-  margin-top: 2.4rem;
 }
 
 .c1 {
@@ -69,12 +56,20 @@ exports[`<SectionTwoColumns/> should render gridTwoColumns 1`] = `
   .c3 {
     margin-bottom: 3.2rem;
     text-align: center;
+    width: 100%;
   }
 }
 
 @media (max-width:768px) {
-  .c10 {
-    max-width: 100vw;
+  .c7 {
+    width: 100%;
+    margin-top: 1.6rem;
+  }
+}
+
+@media (max-width:768px) {
+  .c8 {
+    width: 100%;
   }
 }
 
@@ -95,6 +90,7 @@ exports[`<SectionTwoColumns/> should render gridTwoColumns 1`] = `
       <div
         background="0"
         class="c2"
+        id=""
       >
         <div
           class="c3"
@@ -108,25 +104,17 @@ exports[`<SectionTwoColumns/> should render gridTwoColumns 1`] = `
           </h1>
           <p
             class="c6"
-          >
-            Alo hamigos
-          </p>
-          <a
-            class="c7 c8"
-            href="#"
-          >
-            <button
-              class="c9"
-            >
-              Clique aqui
-            </button>
-          </a>
+          />
         </div>
-        <img
-          alt="Grid two columns"
-          class="c10"
-          src="./assets/images/image1.svg"
-        />
+        <div
+          class="c7"
+        >
+          <img
+            alt="Grid two columns"
+            class="c8"
+            src="./assets/images/image1.svg"
+          />
+        </div>
       </div>
     </div>
   </div>

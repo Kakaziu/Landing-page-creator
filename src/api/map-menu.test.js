@@ -28,15 +28,15 @@ describe('map-menu', () => {
     const linksData = mapMenuLinks([{}])[0];
 
     expect(linksData.newTab).toBe(false);
-    expect(linksData.text).toBe('');
-    expect(linksData.url).toBe('');
+    expect(linksData.children).toBe('');
+    expect(linksData.link).toBe('');
   });
 
   it('should map test when links passed', () => {
     const linksData = mapMenuLinks(menuLinks)[0];
 
     expect(linksData.newTab).toBe(false);
-    expect(linksData.text).toBe('Home');
-    expect(linksData.url).toBe('#home');
+    expect(linksData.children).toBe('Home');
+    expect(linksData.link).toBe('#home');
   });
 });

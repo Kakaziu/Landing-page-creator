@@ -89,7 +89,7 @@ describe('map-sections', () => {
     expect(sectionData.title).toBe('');
     expect(sectionData.sectionId).toBe('');
     expect(sectionData.button).toEqual({
-      textButton: '',
+      children: '',
       urlButton: '',
       size: '',
     });
@@ -112,7 +112,7 @@ describe('map-sections', () => {
     expect(sectionData.title).toBe('Section Box');
     expect(sectionData.paragraphs[0]).toBe('paragraph');
     expect(sectionData.sectionId).toBe('vvvvvv');
-    expect(sectionData.button.textButton).toBe('botao');
+    expect(sectionData.button.children).toBe('botao');
     expect(sectionData.background).toBe(false);
   });
 
@@ -123,7 +123,7 @@ describe('map-sections', () => {
     expect(sectionData.title).toBe('');
     expect(sectionData.html).toBe('');
     expect(sectionData.button).toEqual({
-      textButton: '',
+      children: '',
       urlButton: '',
       size: '',
     });
@@ -137,7 +137,7 @@ describe('map-sections', () => {
     expect(sectionData.component).toBe('section.section-content');
     expect(sectionData.title).toBe('contato');
     expect(sectionData.html).toBe('Lorem ipsum');
-    expect(sectionData.button.textButton).toBe('botao');
+    expect(sectionData.button.children).toBe('botao');
     expect(sectionData.sectionId).toBe('contato');
     expect(sectionData.background).toBe(true);
   });
@@ -151,7 +151,7 @@ describe('map-sections', () => {
     expect(sectionData.description).toBe('');
     expect(sectionData.gridText).toEqual([]);
     expect(sectionData.button).toEqual({
-      textButton: '',
+      children: '',
       urlButton: '',
       size: '',
     });
@@ -164,7 +164,7 @@ describe('map-sections', () => {
     expect(sectionData.sectionId).toBe('depoimentos');
     expect(sectionData.title).toBe('grid');
     expect(sectionData.description).toBe('Lorem ipsum');
-    expect(sectionData.button.textButton).toBe('aaaaa');
+    expect(sectionData.button.children).toBe('aaaaa');
     expect(sectionData.gridText[0].title).toBe('grid 1');
     expect(sectionData.gridText[0].description).toBe(
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent eu gittis mattis.',
@@ -180,7 +180,7 @@ describe('map-sections', () => {
     expect(sectionData.description).toBe('');
     expect(sectionData.gridImage).toEqual([]);
     expect(sectionData.button).toEqual({
-      textButton: '',
+      children: '',
       urlButton: '',
       size: '',
     });
@@ -193,7 +193,7 @@ describe('map-sections', () => {
     expect(sectionData.sectionId).toBe('grid-image');
     expect(sectionData.title).toBe('grid 2');
     expect(sectionData.description).toBe('grid 2 image');
-    expect(sectionData.button.textButton).toBe('aaaaa');
+    expect(sectionData.button.children).toBe('aaaaa');
     expect(sectionData.gridImage[0].altText).toBe('image');
     expect(sectionData.gridImage[0].srcImg).toBe('c.svg');
   });

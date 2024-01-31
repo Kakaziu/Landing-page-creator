@@ -28,7 +28,7 @@ const GridText = ({
             </Styled.GridElement>
           ))}
         </Styled.GridContainer>
-        {button.children && (
+        {button && button.children && (
           <Button url={button.urlButton} size={button.size}>
             {button.children}
           </Button>

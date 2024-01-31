@@ -12,7 +12,7 @@ export default {
     },
   ],
   button: {
-    textButton: 'Clique aqui',
+    children: 'Clique aqui',
     urlButton: '#',
     size: 'small',
   },

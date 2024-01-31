@@ -28,26 +28,6 @@ exports[`<GridText/> should match snapshot 1`] = `
   font-size: 2.4rem;
 }
 
-.c11 {
-  display: block;
-}
-
-.c12 {
-  font-weight: bold;
-  border: none;
-  background-color: #dc143c;
-  color: #FFFFFF;
-  border-radius: 4px;
-  padding: 8px 20px;
-  font-size: 1.6rem;
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-}
-
-.c12:hover {
-  background-color: #b81132;
-}
-
 .c8 .c4 {
   margin-bottom: 1.6rem;
 }
@@ -64,13 +44,13 @@ exports[`<GridText/> should match snapshot 1`] = `
   width: 100%;
 }
 
+.c2 {
+  margin-top: 8rem;
+}
+
 .c2 .c4 {
   margin-bottom: 1.6rem;
   color: #0A1128;
-}
-
-.c2 .c10 {
-  margin-top: 2.4rem;
 }
 
 .c6 {
@@ -94,6 +74,7 @@ exports[`<GridText/> should match snapshot 1`] = `
       <div
         background="0"
         class="c2"
+        id=""
       >
         <div
           class="c3"
@@ -163,16 +144,6 @@ exports[`<GridText/> should match snapshot 1`] = `
             </p>
           </div>
         </div>
-        <a
-          class="c10 c11"
-          href="#"
-        >
-          <button
-            class="c12"
-          >
-            Clique aqui
-          </button>
-        </a>
       </div>
     </div>
   </div>

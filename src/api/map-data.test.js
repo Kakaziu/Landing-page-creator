@@ -8,7 +8,12 @@ describe('map-data', () => {
     expect(pageData.title).toBe('');
     expect(pageData.slug).toBe('');
     expect(pageData.sections).toEqual([]);
-    expect(pageData.menu).toEqual({});
+    expect(pageData.menu).toEqual({
+      link: '',
+      links: [],
+      logoTitle: '',
+      srcImg: '',
+    });
     expect(pageData.footerHtml).toBe('');
   });
 

@@ -19,7 +19,7 @@ const SectionTwoColumns = ({
         <Styled.TextContainer>
           <Heading uppercase>{title}</Heading>
           <TextComponent>{description}</TextComponent>
-          {button.children && (
+          {button && button.children && (
             <Button url={button.urlButton} size={button.size}>
               {button.children}
             </Button>

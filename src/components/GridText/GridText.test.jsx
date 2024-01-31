@@ -8,7 +8,7 @@ describe('<GridText/>', () => {
     renderTheme(<GridText {...mock} />);
 
     expect(screen.getAllByRole('heading', { name: /teste/i })).toHaveLength(
-      mock.grid.length,
+      mock.gridText.length,
     );
   });
 
