@@ -30,13 +30,13 @@ export const mapSectionTwoColumns = (section = {}) => {
     __component: component = 'section.section-two-columns',
     title = '',
     description = '',
-    image: {
-      data: {
-        attributes: { url: srcImg = '', alternativeText: altText = '' } = '',
-      } = '',
-    } = '',
     metadata: { section_id: sectionId = '', background = false } = '',
   } = section;
+
+  let srcImg = section.image.data ? section.image.data.attributes.url : '';
+  let altText = section.image.data
+    ? section.image.data.attributes.alternativeText
+    : '';
 
   if (!section.button) btn = mapButton();
   else btn = mapButton(section.button);
