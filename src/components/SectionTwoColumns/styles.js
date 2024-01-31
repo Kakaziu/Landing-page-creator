@@ -43,7 +43,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 8rem;
+    margin: 8rem 0;
     gap: ${theme.spacings.medium};
 
     @media ${theme.media.lteMedium} {

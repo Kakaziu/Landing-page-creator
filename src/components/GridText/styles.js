@@ -34,7 +34,7 @@ export const GridContainer = styled.div`
 
 export const Container = styled.div`
   ${({ theme, background }) => css`
-  margin-top: 8rem;
+  margin: 8rem 0;
 
     ${HeadingContainer} {
       margin-bottom: ${theme.spacings.small};

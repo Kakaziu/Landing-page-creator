@@ -11,7 +11,7 @@ export const Container = styled.div`
     align-items: center;
     width: 80%;
     margin: 0 auto;
-    margin-top: 8rem;
+    margin: 8rem 0;
 
     > ${Title} {
       margin-bottom: ${theme.spacings.small};
